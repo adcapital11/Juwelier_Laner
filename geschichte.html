@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Unsere Geschichte & Tradition seit 1886 | Juwelier Laner Bruneck</title>
     <meta name="description" content="Erfahren Sie mehr über die über 130-jährige Geschichte von Juwelier Laner. Gegründet 1886 in Bruneck, geführt in Familientradition.">
     <link rel="stylesheet" href="css/style.css">
@@ -77,7 +77,34 @@
             margin-bottom: 1rem;
             color: var(--text-light);
         }
+        .timeline-img-wrapper {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            width: 100%;
+            height: 220px;
+        }
+        .timeline-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .timeline-img-wrapper.auto-height {
+            height: auto;
+        }
+        .timeline-img-wrapper.auto-height img {
+            height: auto;
+            display: block;
+        }
         @media screen and (max-width: 768px) {
+            .timeline-img-wrapper {
+                height: auto;
+                aspect-ratio: 16 / 10;
+            }
+            .timeline-img-wrapper.auto-height {
+                aspect-ratio: auto;
+            }
             .timeline::after {
                 left: 31px;
             }
@@ -106,6 +133,9 @@
             }
         }
     </style>
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -118,7 +148,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -163,6 +193,9 @@
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <div class="timeline-year">1886</div>
+                        <div class="timeline-img-wrapper auto-height">
+                             <img src="images/werbung_1888.jpg" alt="Historische Zeitungsanzeige zur Eröffnung 1888" loading="lazy">
+                        </div>
                         <h3 data-i18n="hist-1-title">Die Gründung</h3>
                         <p data-i18n="hist-1-text">Florian Laner, ursprünglich aus Mühlbach stammend, gründet das Goldgeschäft in der historischen Stadtgasse von Bruneck.</p>
                     </div>
@@ -172,6 +205,9 @@
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <div class="timeline-year" data-i18n="hist-year-2">Nachkriegszeit</div>
+                        <div class="timeline-img-wrapper">
+                             <img src="images/history_2.jpg" alt="Die zweite Generation - Friederike und Wilhelm" loading="lazy" width="600" height="400">
+                        </div>
                         <h3 data-i18n="hist-2-title">Die zweite Generation</h3>
                         <p data-i18n="hist-2-text">Florian übergibt das Geschäft an seine Tochter Friederike. Gemeinsam mit ihrem Mann Wilhelm, einem ausgebildeten Goldschmied, führt sie den Betrieb mit unermüdlicher Willenskraft durch die schweren Nachkriegsjahre.</p>
                     </div>
@@ -181,6 +217,9 @@
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <div class="timeline-year" data-i18n="hist-year-3">Wachstum</div>
+                        <div class="timeline-img-wrapper">
+                             <img src="images/history_3.jpg" alt="Die Söhne Norbert und Bernhard Laner" loading="lazy" width="600" height="400">
+                        </div>
                         <h3 data-i18n="hist-3-title">Die Söhne übernehmen</h3>
                         <p data-i18n="hist-3-text">Die Söhne Norbert und Bernhard übernehmen die Leitung und modernisieren den Familienbetrieb. Mit viel Leidenschaft bauen sie das Sortiment aus und passen es dem Zeitgeist an.</p>
                     </div>
@@ -190,6 +229,9 @@
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <div class="timeline-year" data-i18n="hist-year-4">Heute</div>
+                        <div class="timeline-img-wrapper">
+                             <img src="images/history_4.jpg" alt="Edith und Veronika Feil - vierte Generation" loading="lazy" width="600" height="400">
+                        </div>
                         <h3 data-i18n="hist-4-title">Gegenwart & Zukunft</h3>
                         <p data-i18n="hist-4-text">Edith und Veronika, die beiden Töchter von Norbert, leiten den Betrieb heute in der dritten und vierten Generation mit viel Enthusiasmus, Stil und fundiertem Fachwissen weiter.</p>
                     </div>
@@ -244,5 +286,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+

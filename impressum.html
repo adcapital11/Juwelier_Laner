@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Impressum | Juwelier Laner Bruneck</title>
     <meta name="description" content="Rechtliche Hinweise, Unternehmensangaben und Pflichtangaben von Juwelier Laner (Feil Veronika KG) in Bruneck.">
     <link rel="stylesheet" href="css/style.css">
@@ -52,6 +52,9 @@
             }
         }
     </style>
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -64,7 +67,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -108,7 +111,7 @@
                     <li><strong data-i18n="legal-vat">MwSt.-Nr. / P.IVA:</strong> IT00206160210</li>
                     <li><strong data-i18n="legal-registry">Handelsregister:</strong> Handelskammer Bozen, Nr. 00206160210</li>
                     <li><strong data-i18n="label-phone">Telefon:</strong> <a href="tel:+390474554035">+39 0474 554035</a></li>
-                    <li><strong data-i18n="label-email">E-Mail:</strong> <a href="mailto:info@f-laner.it">info@f-laner.it</a></li>
+                    <li><strong data-i18n="label-email">E-Mail:</strong> <a href="#" class="email-lnk" data-user="info" data-domain="f-laner.it">info [at] f-laner.it</a></li>
                 </ul>
 
                 <h2 data-i18n="legal-disclaimer-title">Haftungsausschluss</h2>
@@ -160,5 +163,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+

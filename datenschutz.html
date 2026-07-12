@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Datenschutz & Cookies | Juwelier Laner Bruneck</title>
     <meta name="description" content="Datenschutzerklärung und Informationen über Cookies gemäß DSGVO von Juwelier Laner.">
     <link rel="stylesheet" href="css/style.css">
@@ -44,6 +44,9 @@
             }
         }
     </style>
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -56,7 +59,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -160,5 +163,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+

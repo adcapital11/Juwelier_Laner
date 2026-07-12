@@ -2,10 +2,13 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Goldschmiede & Uhrenservice | Meisterwerkstatt Juwelier Laner Bruneck</title>
     <meta name="description" content="Hauseigene Goldschmiede und Uhrmacherwerkstatt in Bruneck. Wir reparieren, gravieren und restaurieren Ihren wertvollen Schmuck und Ihre Luxusuhren.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -18,7 +21,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -56,31 +59,37 @@
                 <p data-i18n="service-text">Handwerk aus Leidenschaft. In unserer hauseigenen Werkstatt pflegen und reparieren wir Ihre wertvollen Schmuckstücke und Uhren mit äußerster Präzision.</p>
             </div>
 
-            <!-- Service Details Grid -->
-            <div class="service-details-grid">
-                
-                <div class="service-info-column">
-                    
-                    <!-- Service Card 1 -->
-                    <div class="service-card">
-                        <h3 data-i18n="repair-jewelry-title">Goldschmiede-Atelier</h3>
-                        <p data-i18n="repair-jewelry-text">Individuelle Neuanfertigungen, Ringgrößen-Anpassungen, Aufarbeitungen und edle Gravuren für Ihre Erbstücke. Jedes Teil wird mit Respekt vor dem Material bearbeitet.</p>
-                    </div>
-
-                    <!-- Service Card 2 -->
-                    <div class="service-card">
-                        <h3 data-i18n="repair-watch-title">Zertifizierter Uhrenservice</h3>
-                        <p data-i18n="repair-watch-text">Revisionen mechanischer Uhrwerke, Batteriewechsel, Wasserdichtigkeitsprüfungen und fachgerechte Restaurationen historischer Zeitmesser.</p>
-                    </div>
-
-                    <a href="kontakt.html" class="btn btn-primary" data-i18n="btn-book-now">Jetzt kontaktieren</a>
-
+            <!-- Service Section 1: Goldschmiede -->
+            <section class="split-section" style="margin-bottom: 5rem; border: 1px solid var(--border-color); background-color: var(--bg-card);">
+                <div class="split-content">
+                    <span class="product-category" style="color: var(--gold); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.22em; font-family: var(--font-body);">Meisterhandwerk</span>
+                    <h2 data-i18n="repair-jewelry-title" style="font-family: var(--font-heading); font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.5rem; color: var(--gold-light);">Goldschmiede-Atelier</h2>
+                    <p data-i18n="repair-jewelry-text" style="line-height: 1.8; color: var(--text-muted); font-size: 1rem;">
+                        Individuelle Neuanfertigungen, Ringgrößen-Anpassungen, Aufarbeitungen und edle Gravuren für Ihre Erbstücke. Jedes Teil wird mit Respekt vor dem Material bearbeitet.
+                    </p>
                 </div>
-
-                <div class="showcase-img">
-                    <img src="images/goldsmith_atelier.png" alt="Handwerkliche Bearbeitung eines Rings im Goldschmiede-Atelier">
+                <div class="split-image">
+                    <img src="images/goldsmith_atelier.png" alt="Handwerkliche Bearbeitung eines Rings im Goldschmiede-Atelier" loading="lazy" width="600" height="400">
                 </div>
+            </section>
 
+            <!-- Service Section 2: Uhrenservice -->
+            <section class="split-section" style="margin-bottom: 5rem; border: 1px solid var(--border-color); background-color: var(--bg-card);">
+                <div class="split-image">
+                    <img src="images/watch_service.png" alt="Präzisionsreparatur eines Uhrwerks in der Uhrmacherwerkstatt" loading="lazy" width="600" height="400">
+                </div>
+                <div class="split-content">
+                    <span class="product-category" style="color: var(--gold); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.22em; font-family: var(--font-body);">Präzision & Pflege</span>
+                    <h2 data-i18n="repair-watch-title" style="font-family: var(--font-heading); font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1.5rem; color: var(--gold-light);">Zertifizierter Uhrenservice</h2>
+                    <p data-i18n="repair-watch-text" style="line-height: 1.8; color: var(--text-muted); font-size: 1rem;">
+                        Revisionen mechanischer Uhrwerke, Batteriewechsel, Wasserdichtigkeitsprüfungen und fachgerechte Restaurationen historischer Zeitmesser.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Centered Bottom CTA -->
+            <div style="text-align: center; margin-top: 5rem;">
+                <a href="kontakt.html" class="btn btn-primary" data-i18n="btn-book-now">Jetzt kontaktieren</a>
             </div>
 
         </div>
@@ -128,5 +137,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+

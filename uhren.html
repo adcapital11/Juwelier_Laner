@@ -2,10 +2,13 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Luxusuhren & Uhrmacher-Service | Juwelier Laner Bruneck</title>
     <meta name="description" content="Präzision, Tradition und mechanische Meisterschaft. Entdecken Sie exklusive Luxusuhren renommierter Manufakturen im Showroom von Juwelier Laner.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -18,7 +21,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -70,7 +73,7 @@
                 <!-- Watch 1 -->
                 <div class="product-card" data-category="gold-watches">
                     <div class="product-img">
-                        <img src="images/gold_watch_stone.png" alt="Chronograph Oro 18k">
+                        <img src="images/gold_watch_stone.png" alt="Chronograph Oro 18k" loading="lazy" width="600" height="400">
                     </div>
                     <div class="product-info">
                         <span class="product-category" data-i18n="filter-gold-watches">Edelmetall</span>
@@ -86,7 +89,7 @@
                 <!-- Watch 2 -->
                 <div class="product-card" data-category="classic">
                     <div class="product-img">
-                        <img src="images/boutique_interior.png" alt="Laner Traditionelle Dresswatch">
+                        <img src="images/boutique_interior.png" alt="Laner Traditionelle Dresswatch" loading="lazy" width="600" height="400">
                     </div>
                     <div class="product-info">
                         <span class="product-category" data-i18n="filter-classic">Klassisch</span>
@@ -107,7 +110,7 @@
     <!-- Bottom CTA Banner -->
     <section class="section-padding" style="border-top: 1px solid var(--border-color); text-align: center; background-color: #0b0b0b;">
         <div class="container" style="max-width: 800px;">
-            <h2 data-i18n="bottom-cta-title" style="font-size: 2.2rem; margin-bottom: 1.5rem;">Besuchen Sie uns in Bruneck</h2>
+            <h2 data-i18n="bottom-cta-title">Besuchen Sie uns in Bruneck</h2>
             <p data-i18n="bottom-cta-text" style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--text-muted);">Erleben Sie unsere erlesenen Kollektionen und unseren meisterhaften Service persönlich in der historischen Stadtgasse.</p>
             <a href="kontakt.html" class="btn btn-primary" data-i18n="nav-kontakt">Kontakt</a>
         </div>
@@ -155,5 +158,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+

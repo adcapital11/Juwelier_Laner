@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('fonts.css');
 
 :root {
     --bg-dark: #121212;
@@ -51,6 +51,15 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
     color: var(--text-light);
     line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
 }
 
 p {
@@ -475,7 +484,8 @@ header.scrolled {
     }
 }
 
-.split-content h2 {
+.split-content h2,
+.showcase-info h2 {
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
 }
@@ -520,7 +530,7 @@ header.scrolled {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 5rem;
-    align-items: center;
+    align-items: stretch;
 }
 
 @media (max-width: 992px) {
@@ -528,17 +538,29 @@ header.scrolled {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+    .showcase-img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .showcase-img {
+        height: 350px;
+    }
 }
 
 .showcase-img {
     position: relative;
     border: 1px solid var(--border-color);
     padding: 1rem;
+    height: 100%;
+    display: flex;
 }
 
 .showcase-img img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 
 .showcase-features {
@@ -958,6 +980,7 @@ textarea.form-control {
     gap: 1.5rem;
     margin-bottom: 4rem;
     flex-wrap: wrap;
+    scroll-margin-top: calc(var(--header-height) + 2rem);
 }
 
 .filter-btn {
@@ -1010,6 +1033,11 @@ textarea.form-control {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.05);
 }
 
 .product-info {
@@ -1534,4 +1562,85 @@ textarea.form-control {
         gap: 0.6rem;
     }
 }
+
+/* Responsive Typography Overrides */
+@media (max-width: 768px) {
+    h1, .showroom-intro h1 {
+        font-size: 1.8rem;
+    }
+    h2, .split-content h2, .showcase-info h2,
+    h3, .pillar-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.2);
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+}
+
+/* Custom Scrollbar for Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(212, 175, 55, 0.2) var(--bg-dark);
+}
+
+/* Premium Focus Rings for Accessibility */
+*:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--gold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-smooth);
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.back-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top-btn:hover {
+    background-color: var(--gold);
+    color: var(--bg-dark);
+    border-color: var(--gold);
+    transform: translateY(-3px);
+}
+@media (max-width: 768px) {
+    .back-to-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 

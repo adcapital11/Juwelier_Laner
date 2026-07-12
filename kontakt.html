@@ -2,10 +2,44 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Kontakt & Anfahrt | Ihr Juwelier in Bruneck</title>
     <meta name="description" content="Kontaktieren Sie uns für private Termine, Trauringberatung oder Uhrenservice in Bruneck. Erfahren Sie mehr über steuerfreies Einkaufen (Tax-Free).">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            grid-template-areas: 
+                "image details"
+                "hosts details";
+            gap: 3rem;
+            margin: 0 auto 6rem auto;
+            max-width: 1000px;
+        }
+        .contact-image {
+            grid-area: image;
+        }
+        .contact-hosts {
+            grid-area: hosts;
+        }
+        .contact-details {
+            grid-area: details;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "image"
+                    "details"
+                    "hosts";
+                gap: 2.5rem;
+            }
+        }
+    </style>
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -18,7 +52,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -51,43 +85,50 @@
         <div class="container">
             
             <div class="showroom-intro">
-                <h1 data-i18n="kontakt-page-title">Kontakt & Buchung</h1>
-                <p data-i18n="kontakt-page-text">Haben Sie Fragen oder möchten Sie einen Termin außerhalb der Öffnungszeiten vereinbaren? Kontaktieren Sie uns direkt.</p>
+                <h1 data-i18n="kontakt-page-title">Kontakt</h1>
+                <p data-i18n="kontakt-page-text">Haben Sie Fragen oder Wünsche? Wir freuen uns darauf, Sie persönlich in unserem Geschäft in Bruneck zu begrüßen oder direkt von Ihnen zu hören.</p>
             </div>
 
-            <!-- Centered Info Column -->
-            <div style="max-width: 600px; margin: 0 auto 6rem auto; display: flex; flex-direction: column; gap: 2.5rem;" class="">
+            <!-- Contact Grid Layout -->
+            <div class="contact-grid">
                 
+                <!-- Storefront Image -->
+                <div class="contact-image" style="border: 1px solid var(--border-color); overflow: hidden; height: 350px;">
+                    <img src="images/storefront_bruneck.png" alt="Außenansicht des Juwelier Laner Geschäfts in der Stadtgasse in Bruneck" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" width="600" height="400">
+                </div>
+
                 <!-- Contact Details -->
-                <div class="local-details" style="background-color: var(--bg-card); padding: 3rem; border: 1px solid var(--border-color);">
-                    <h2 data-i18n="trust-title" style="text-align: center; margin-bottom: 2rem;">Ihr Besuch in Bruneck</h2>
-                    
-                    <div class="info-group">
-                        <h4 data-i18n="hours-title">Öffnungszeiten</h4>
-                        <p data-i18n="hours-weekdays">Montag - Freitag: 09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr</p>
-                        <p data-i18n="hours-sat">Samstag: 09:00 - 12:00 Uhr</p>
+                <div class="contact-details local-details" style="background-color: var(--bg-card); padding: 3rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h2 data-i18n="trust-title" style="text-align: center; margin-bottom: 2rem;">Ihr Besuch in Bruneck</h2>
+                        
+                        <div class="info-group">
+                            <h4 data-i18n="hours-title">Öffnungszeiten</h4>
+                            <p data-i18n="hours-weekdays">Montag - Freitag: 09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr</p>
+                            <p data-i18n="hours-sat">Samstag: 09:00 - 12:00 Uhr</p>
+                        </div>
+
+                        <div class="info-group">
+                            <h4 data-i18n="address-title">Adresse</h4>
+                            <p>Stadtgasse 18, 39031 Bruneck (BZ), Südtirol, Italien</p>
+                        </div>
+
+                        <div class="info-group">
+                            <h4 data-i18n="label-phone">Telefon</h4>
+                            <p><a href="tel:+390474554035">+39 0474 554035</a></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h4 data-i18n="label-email">E-Mail</h4>
+                            <p><a href="#" class="email-lnk" data-user="info" data-domain="f-laner.it">info [at] f-laner.it</a></p>
+                        </div>
                     </div>
 
-                    <div class="info-group">
-                        <h4 data-i18n="address-title">Adresse</h4>
-                        <p>Stadtgasse 18, 39031 Bruneck (BZ), Südtirol, Italien</p>
-                    </div>
-
-                    <div class="info-group">
-                        <h4 data-i18n="label-phone">Telefon</h4>
-                        <p><a href="tel:+390474554035">+39 0474 554035</a></p>
-                    </div>
-
-                    <div class="info-group">
-                        <h4 data-i18n="label-email">E-Mail</h4>
-                        <p><a href="mailto:info@f-laner.it">info@f-laner.it</a></p>
-                    </div>
-
-                    <a href="https://maps.google.com/?q=Juwelier+Laner,+Stadtgasse+18,+39031+Bruneck" target="_blank" class="btn btn-secondary map-btn" style="display: block; text-align: center; margin-top: 2rem;" data-i18n="route-btn">Route planen</a>
+                    <a href="https://maps.google.com/?q=Juwelier+Laner,+Stadtgasse+18,+39031+Bruneck" target="_blank" rel="noopener noreferrer" class="btn btn-secondary map-btn" style="display: block; text-align: center; margin-top: 2rem;" data-i18n="route-btn">Route planen</a>
                 </div>
 
                 <!-- Host Presentation Card -->
-                <div style="background-color: var(--bg-card); padding: 3rem; border: 1px solid var(--border-color); text-align: center;">
+                <div class="contact-hosts" style="background-color: var(--bg-card); padding: 3rem; border: 1px solid var(--border-color); text-align: center;">
                     <h2 data-i18n="hosts-title" style="margin-bottom: 1.5rem;">Ihre Gastgeberinnen</h2>
                     <p data-i18n="hosts-text" style="line-height: 1.8; color: var(--text-muted); font-size: 0.95rem;">
                         Edith und Veronika Feil leiten das Traditionsgeschäft in der vierten Generation. Mit geschultem Auge für Ästhetik und tiefer Liebe zum Goldschmiedehandwerk stehen wir Ihnen persönlich beratend zur Seite, um Ihre Wünsche Wirklichkeit werden zu lassen.
@@ -142,5 +183,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+

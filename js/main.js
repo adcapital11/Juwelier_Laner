@@ -41,6 +41,30 @@ const translations = {
         "pillar-3-text": "Diskrete Beratung in entspannter Atmosphäre – wir nehmen uns Zeit für Ihre Lebensbegleiter.",
         
         // Homepage Section 3: Wedding Focus
+                "verlobung-badge": "Ratgeber",
+        "verlobung-teaser-title": "Der Verlobungs-Kompass",
+        "verlobung-teaser-text": "Planen Sie den perfekten Heiratsantrag? Unser Leitfaden hilft Ihnen dabei, heimlich die richtige Ringgröße zu finden, das passende Material zu wählen und die perfekte Entscheidung ohne Risiko zu treffen.",
+        "verlobung-teaser-btn": "Zum Verlobungs-Kompass",
+        "verlobung-link": "Der Brunecker Verlobungs-Kompass (Ratgeber) →",
+        "guide-title": "Der Verlobungs-Kompass",
+        "guide-intro": "Planen Sie den Moment aller Momente völlig sorgenfrei. Mit unserem Leitfaden führen wir Sie stufenweise zum perfekten Ring und sichern den Antrag mit exklusiven Garantien ab.",
+        "step-1-title": "Die Wahl des Edelmetalls",
+        "step-1-text": "Für einen Verlobungsring, der ein Leben lang glänzt, empfehlen wir Platin 950 oder 18-karätiges Gold. Platin ist extrem abriebfest und behält seine strahlend weiße Farbe für immer, ohne zu verblassen. Weißgold bietet eine ähnlich kühle Eleganz, während Gelbgold oder warmes Roségold klassischen und femininen Stil verkörpern.",
+        "step-2-title": "Die Ringgröße heimlich messen",
+        "step-2-text": "Der wohl spannendste Schritt. So ermitteln Sie die Größe, ohne Verdacht zu schöpfen:",
+        "size-trick-1": "<strong>Der Ring-Trick:</strong> Entwenden Sie heimlich einen gut passenden Ring Ihrer Partnerin (am besten einen, der am Ringfinger getragen wird) und bringen Sie diesen zu uns ins Geschäft. Wir messen ihn exakt aus.",
+        "size-trick-2": "<strong>Der Seifentest:</strong> Drücken Sie den Ring heimlich kurz in ein Stück feste Seife, um einen Abdruck zu erstellen, den Sie uns zeigen können.",
+        "size-trick-3": "<strong>Freunde fragen:</strong> Manchmal wissen die beste Freundin oder die Mutter bereits die exakte Größe.",
+        "step-3-title": "Die 4Cs des Diamanten verstehen",
+        "step-3-text": "Ein Diamant funkelt durch die Kombination aus vier Faktoren: <strong>Carat</strong> (Gewicht/Größe), <strong>Cut</strong> (Schliffqualität – entscheidend für das Feuer), <strong>Clarity</strong> (Reinheit) und <strong>Color</strong> (Farblosigkeit). Wir führen ausschließlich zertifizierte Steine und helfen Ihnen, die perfekte Balance für Ihr Budget zu finden.",
+        "step-4-title": "Das risikofreie Laner-Versprechen",
+        "step-4-text": "Sorgenfreier Antrag garantiert: Sollte die Ringgröße trotz aller Heimlichkeit nicht passen, ändern wir die Ringgröße in unserer Brunecker Meisterwerkstatt nach dem Antrag **völlig kostenlos**. So bleibt der Moment der Frage perfekt und frei von Sorgen.",
+        "sizer-title": "Kostenloses Ringmaßband anfordern",
+        "sizer-desc": "Wir senden Ihnen auf Wunsch ein diskretes Ringmaßband (Multisizer) per Post kostenlos nach Hause. Damit können Sie die Ringgröße Ihrer Partnerin heimlich oder gemeinsam exakt ablesen.",
+        "sizer-btn": "Ringmaßband anfordern",
+        "guide-cta-title": "Erleben Sie die Beratung vor Ort",
+        "guide-cta-text": "Besuchen Sie uns in der Stadtgasse in Bruneck. Wir zeigen Ihnen die Edelmetalle im Vergleich und finden gemeinsam den Stein, der Ihre Liebesgeschichte erzählt",
+        
         "wedding-title": "Für das größte „Ja“ Ihres Lebens.",
         "wedding-text": "Der Kauf von Eheringen ist ein magischer Moment. In entspannter Atmosphäre nehmen wir uns die Zeit, die Ihre Liebe verdient. Entdecken Sie unsere exklusive Auswahl für den schönsten Tag im Leben.",
         "wedding-link": "Mehr über unsere Trauring-Beratung erfahren →",
@@ -230,6 +254,30 @@ const translations = {
         "pillar-3-text": "Consulenza discreta in un'atmosfera rilassata – dedichiamo il tempo che i tuoi preziosi meritano.",
         
         // Homepage Section 3: Wedding Focus
+                "verlobung-badge": "Guida",
+        "verlobung-teaser-title": "La Bussola del Fidanzamento",
+        "verlobung-teaser-text": "State pianificando la proposta perfetta? La nostra guida vi aiuterà a trovare segretamente la giusta misura, scegliere il metallo ideale e prendere una decisione sicura e senza rischi.",
+        "verlobung-teaser-btn": "Vai alla Bussola",
+        "verlobung-link": "La Bussola del Fidanzamento di Brunico (Guida) →",
+        "guide-title": "La Bussola del Fidanzamento",
+        "guide-intro": "Pianificate il momento più importante in assoluto in totale serenità. Con la nostra guida vi accompagneremo passo dopo passo verso la scelta dell'anello perfetto con garanzie esclusive.",
+        "step-1-title": "La scelta del metallo prezioso",
+        "step-1-text": "Per un anello di fidanzamento che risplenda per sempre, consigliamo il platino 950 o l'oro a 18 carati. Il platino è estremamente resistente e mantiene intatto il suo colore bianco puro per sempre. L'oro bianco offre una simile eleganza fredda, mentre l'oro giallo o rosa esprimono uno stile classico e femminile.",
+        "step-2-title": "Misurare la taglia segretamente",
+        "step-2-text": "Il passo più emozionante. Ecco come scoprire la misura senza destare sospetti:",
+        "size-trick-1": "<strong>Il trucco dell'anello:</strong> Prendi segretamente un anello della tua partner (preferibilmente uno che indossa all'anulare) e portalo in negozio. Lo misureremo con precisione.",
+        "size-trick-2": "<strong>Il calco del sapone:</strong> Premi brevemente l'anello in un pezzo di sapone solido per creare un calco da mostrarci.",
+        "size-trick-3": "<strong>Chiedere ad amici:</strong> Spesso la migliore amica o la mamma conoscono già la misura esatta.",
+        "step-3-title": "Comprendere le 4C del diamante",
+        "step-3-text": "Un diamante brilla grazie a quattro fattori: <strong>Carat</strong> (peso/grandezza), <strong>Cut</strong> (taglio – fondamentale per il fuoco), <strong>Clarity</strong> (purezza) e <strong>Color</strong> (colore/assenza di colore). Offriamo esclusivamente pietre certificate per trovare l'equilibrio ideale per il tuo budget.",
+        "step-4-title": "La promessa senza rischi di Laner",
+        "step-4-text": "Proposta senza pensieri: se la misura dell'anello dovesse risultare errata nonostante i trucchi, modificheremo la misura nel nostro laboratorio orafo a Brunico **gratuitamente** dopo la proposta.",
+        "sizer-title": "Richiedi il misuratore anelli gratuito",
+        "sizer-desc": "Su richiesta vi invieremo a casa per posta un misuratore anelli discreto (Multisizer). In questo modo potrete misurare con precisione la taglia segretamente o insieme.",
+        "sizer-btn": "Richiedi misuratore",
+        "guide-cta-title": "Vivi la consulenza in negozio",
+        "guide-cta-text": "Vieni a trovarci nella Via Centrale a Brunico. Ti mostreremo i metalli preziosi a confronto per trovare insieme la pietra che racconta la vostra storia",
+        
         "wedding-title": "Per il „Sì“ più importante della tua vita.",
         "wedding-text": "L'acquisto delle fedi nuziali è un momento magico. In un'atmosfera rilassata, ci prendiamo il tempo che il vostro amore merita. Scoprite la nostra selezione esclusiva per il vostro giorno più bello.",
         "wedding-link": "Scopri di più sulla consulenza fedi nuziali →",
@@ -419,6 +467,30 @@ const translations = {
         "pillar-3-text": "Discrete guidance in a warm atmosphere – we take all the time your life companions deserve.",
         
         // Homepage Section 3: Wedding Focus
+                "verlobung-badge": "Guide",
+        "verlobung-teaser-title": "The Engagement Compass",
+        "verlobung-teaser-text": "Planning the perfect proposal? Our guide will help you secretly determine the ring size, choose the ideal precious metal, and make a worry-free decision backed by our workshop guarantee.",
+        "verlobung-teaser-btn": "Go to the Compass Guide",
+        "verlobung-link": "The Bruneck Engagement Compass (Guide) →",
+        "guide-title": "The Engagement Compass",
+        "guide-intro": "Plan the moment of moments completely worry-free. Our step-by-step guide leads you to the perfect ring, backed by our exclusive workshop resizing guarantees.",
+        "step-1-title": "Choosing the Precious Metal",
+        "step-1-text": "For an engagement ring that shines for a lifetime, we recommend platinum 950 or 18-karat gold. Platinum is exceptionally durable and retains its bright white color forever. White gold offers a similar cool elegance, while yellow or warm rose gold embodies classic, feminine style.",
+        "step-2-title": "Secretly Measuring the Ring Size",
+        "step-2-text": "The most exciting step. How to find the correct size without raising suspicion:",
+        "size-trick-1": "<strong>The Ring Trick:</strong> Secretly borrow a ring your partner wears on the ring finger and bring it to our store. We will measure it precisely.",
+        "size-trick-2": "<strong>The Soap Test:</strong> Press the ring briefly into a bar of soap to create a physical impression you can bring to us.",
+        "size-trick-3": "<strong>Ask Close Relatives:</strong> Often her mother or best friend already knows her exact ring size.",
+        "step-3-title": "Understanding the 4Cs of Diamonds",
+        "step-3-text": "A diamond's brilliance depends on four factors: <strong>Carat</strong> (weight/size), <strong>Cut</strong> (cut quality – vital for fire), <strong>Clarity</strong> (purity), and <strong>Color</strong> (colorlessness). We only carry certified stones and help you balance these for your budget.",
+        "step-4-title": "The Risk-Free Laner Guarantee",
+        "step-4-text": "Worry-free proposal guaranteed: If the ring size doesn't fit despite your best efforts, we will resize the ring in our Bruneck master workshop **completely free of charge** after the proposal.",
+        "sizer-title": "Request a Free Ring Sizer",
+        "sizer-desc": "We will gladly mail you a discreet ring sizer (Multisizer) directly to your home for free. You can use it to determine her ring size secretly or together.",
+        "sizer-btn": "Request Ring Sizer",
+        "guide-cta-title": "Experience the Consultation in Person",
+        "guide-cta-text": "Visit us in the Stadtgasse in Bruneck. We will show you precious metals in comparison and help you find the diamond that tells your love story",
+        
         "wedding-title": "For the biggest 'Yes' of your life.",
         "wedding-text": "Buying wedding rings is a magical moment. In a relaxed atmosphere, we take the time your love deserves. Discover our exclusive selection of wedding bands.",
         "wedding-link": "Learn more about our wedding consultation →",
@@ -590,15 +662,31 @@ function setLanerCookie(name, value, days = 365) {
 // Global language switcher logic
 let currentLang = "de";
 try {
+    // Detect browser language and map it to available translations (de, it, en)
+    const getBrowserLanguage = () => {
+        try {
+            const browserLang = (navigator.language || navigator.userLanguage || "de").substring(0, 2).toLowerCase();
+            return ["de", "it", "en"].includes(browserLang) ? browserLang : "en"; // Fallback to English for non-DE/non-IT
+        } catch (e) {
+            return "de";
+        }
+    };
+
     const urlParams = new URLSearchParams(window.location.search);
     const urlLang = urlParams.get('lang');
     if (urlLang && translations[urlLang]) {
         currentLang = urlLang;
     } else {
-        currentLang = localStorage.getItem("laner-lang") || getLanerCookie("laner-lang") || "de";
+        currentLang = localStorage.getItem("laner-lang") || getLanerCookie("laner-lang") || getBrowserLanguage();
     }
 } catch (e) {
-    currentLang = getLanerCookie("laner-lang") || "de";
+    try {
+        const browserLang = (navigator.language || navigator.userLanguage || "de").substring(0, 2).toLowerCase();
+        const detected = ["de", "it", "en"].includes(browserLang) ? browserLang : "en";
+        currentLang = getLanerCookie("laner-lang") || detected;
+    } catch (err) {
+        currentLang = getLanerCookie("laner-lang") || "de";
+    }
 }
 
 function setLanguage(lang) {
@@ -680,8 +768,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (mobileToggle && navLinks) {
         mobileToggle.addEventListener("click", () => {
-            mobileToggle.classList.toggle("active");
+            const isActive = mobileToggle.classList.toggle("active");
             navLinks.classList.toggle("active");
+            mobileToggle.setAttribute("aria-expanded", isActive ? "true" : "false");
         });
 
         // Close menu when clicking navigation item
@@ -689,33 +778,11 @@ document.addEventListener("DOMContentLoaded", () => {
             a.addEventListener("click", () => {
                 mobileToggle.classList.remove("active");
                 navLinks.classList.remove("active");
+                mobileToggle.setAttribute("aria-expanded", "false");
             });
         });
     }
 
-    // Contact Form Control & Submit with premium micro-interactions
-    const contactForm = document.getElementById("contact-form");
-    const successMsg = document.getElementById("success-msg");
-
-    if (contactForm && successMsg) {
-        contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            
-            // Simulate API request to boutique mail desk
-            const submitBtn = contactForm.querySelector(".form-submit-btn");
-            const originalText = submitBtn.innerHTML;
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = currentLang === 'de' ? 'Wird gesendet...' : currentLang === 'it' ? 'Invio in corso...' : 'Sending...';
-
-            setTimeout(() => {
-                contactForm.style.display = "none";
-                successMsg.style.display = "block";
-                contactForm.reset();
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            }, 1200);
-        });
-    }
 
     // Close modals when pressing the Escape key
     document.addEventListener("keydown", (e) => {
@@ -758,6 +825,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Gift card click programmatically triggers filter-btn click
+    const giftCards = document.querySelectorAll(".gift-card");
+    giftCards.forEach(card => {
+        card.addEventListener("click", () => {
+            const filterTarget = card.getAttribute("data-filter-target");
+            const targetBtn = document.querySelector(`.filter-btn[data-filter="${filterTarget}"]`);
+            if (targetBtn) {
+                targetBtn.click();
+                // Smooth scroll to the product section
+                document.querySelector(".filter-bar").scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
     // Testimonial slider logic
     const slides = document.querySelectorAll(".testimonial-slide");
     const dots = document.querySelectorAll(".testimonial-dots .dot");
@@ -782,11 +863,6 @@ document.addEventListener("DOMContentLoaded", () => {
             let next = (currentSlideIndex + 1) % slides.length;
             showSlide(next);
         }, 8000); // Smooth rotation every 8 seconds
-    } else {
-        // Fallback for older browsers
-        animateSections.forEach(section => {
-            section.classList.add("is-visible");
-        });
     }
 
     // Initialize Cookie Consent Banner & Modal
@@ -919,6 +995,16 @@ function initCookieConsent() {
         saveConsent(stats, func, mark);
     });
 
+    // Decrypt email links to protect against simple spam crawlers
+    document.querySelectorAll(".email-lnk").forEach(lnk => {
+        const u = lnk.getAttribute("data-user");
+        const d = lnk.getAttribute("data-domain");
+        if (u && d) {
+            lnk.setAttribute("href", "mailto:" + u + "@" + d);
+            lnk.textContent = u + "@" + d;
+        }
+    });
+
     // Make sure we trigger translation updates on banner elements
     setLanguage(currentLang);
     
@@ -947,5 +1033,23 @@ function initCookieConsent() {
         
         banner.style.display = "none";
         modal.style.display = "none";
+    }
+
+    // Back to Top Button Logic
+    const backToTopBtn = document.getElementById("back-to-top");
+    if (backToTopBtn) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add("visible");
+            } else {
+                backToTopBtn.classList.remove("visible");
+            }
+        });
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     }
 }

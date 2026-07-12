@@ -2,10 +2,64 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Exklusiver Schmuck & Trauringe | Juwelier Laner Bruneck</title>
     <meta name="description" content="Entdecken Sie exklusiven handgefertigten Schmuck, feinstes 18k italienisches Gold und einzigartige Trauringe im digitalen Showroom von Juwelier Laner.">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gift-compass {
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+        }
+        .gift-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .gift-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .gift-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-focus);
+        }
+        .gift-card h4 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            color: var(--gold-light);
+            margin-bottom: 0.8rem;
+        }
+        .gift-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .gift-card span {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+        .gift-card:hover span {
+            color: var(--text-light);
+        }
+    </style>
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -18,7 +72,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -56,12 +110,71 @@
                 <p data-i18n="showroom-jewelry-text">Erlesene Einzelstücke und edle Linien. Entdecken Sie feinstes Gold und Diamanten in unserem digitalen Showroom.</p>
             </div>
 
+            <!-- Verlobungs-Kompass Teaser Banner -->
+            <div class="verlobungs-teaser" style="background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 3rem; margin-bottom: 4rem; display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap;">
+                <div style="flex: 1 1 400px;">
+                    <span class="product-category" style="color: var(--gold); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.22em; font-family: var(--font-body);" data-i18n="verlobung-badge">Ratgeber</span>
+                    <h2 data-i18n="verlobung-teaser-title" style="font-family: var(--font-heading); font-size: 2rem; margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 400;">Der Verlobungs-Kompass</h2>
+                    <p data-i18n="verlobung-teaser-text" style="color: var(--text-muted); line-height: 1.7; font-size: 0.95rem;">
+                        Planen Sie den perfekten Heiratsantrag? Unser Leitfaden hilft Ihnen dabei, heimlich die richtige Ringgröße zu finden, das passende Material zu wählen und die perfekte Entscheidung ohne Risiko zu treffen.
+                    </p>
+                </div>
+                <div>
+                    <a href="verlobung.html" class="btn btn-primary" data-i18n="verlobung-teaser-btn">Zum Verlobungs-Kompass</a>
+                </div>
+            </div>
+
+            <!-- Geschenk-Kompass Section -->
+            <div class="gift-compass">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <span class="product-category" style="color: var(--gold); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.22em; font-family: var(--font-body);">Schenken mit Bedeutung</span>
+                    <h2 style="font-family: var(--font-heading); font-size: 2.2rem; margin-top: 0.5rem; color: var(--text-light); font-weight: 400;">Der Geschenk-Kompass</h2>
+                    <p style="color: var(--text-muted); max-width: 600px; margin: 0.5rem auto 0 auto; line-height: 1.7; font-size: 0.95rem;">Finden Sie das perfekte Präsent für die wichtigsten Meilensteine des Lebens. Klicken Sie auf einen Anlass, um die Auswahl zu filtern.</p>
+                </div>
+                
+                <div class="gift-grid">
+                    <!-- Card 1 -->
+                    <div class="gift-card" data-filter-target="rings">
+                        <div>
+                            <h4>Für den Antrag</h4>
+                            <p>Sagen Sie Ja mit einem unvergänglichen Solitär-Brillanten oder einem zeitlosen Platinring.</p>
+                        </div>
+                        <span>Kollektion ansehen →</span>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="gift-card" data-filter-target="necklaces">
+                        <div>
+                            <h4>Zum Jahrestag</h4>
+                            <p>Feiern Sie Ihre gemeinsame Zeit mit feinstem italienischen Gold und edlen Colliers.</p>
+                        </div>
+                        <span>Kollektion ansehen →</span>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="gift-card" data-filter-target="all">
+                        <div>
+                            <h4>Ein Stück Heimat</h4>
+                            <p>Die exklusive Dolomiten-Kollektion als unvergängliche Erinnerung an Südtirol.</p>
+                        </div>
+                        <span>Kollektion ansehen →</span>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="gift-card" data-filter-target="tradition">
+                        <div>
+                            <h4>Für Generationen</h4>
+                            <p>Schenken Sie bleibende Werte zur Geburt, Taufe, Erstkommunion oder für Kinder.</p>
+                        </div>
+                        <span>Kollektion ansehen →</span>
+                    </div>
+                </div>
+            </div>
+
             <!-- Filter Bar -->
             <div class="filter-bar">
                 <button class="filter-btn active" data-filter="all" data-i18n="filter-all">Alle</button>
                 <button class="filter-btn" data-filter="rings" data-i18n="filter-rings">Ringe</button>
                 <button class="filter-btn" data-filter="necklaces" data-i18n="filter-necklaces">Ketten</button>
                 <button class="filter-btn" data-filter="earrings" data-i18n="filter-earrings">Ohrringe</button>
+                <button class="filter-btn" data-filter="tradition" data-i18n="filter-tradition">Tradition & Geschenke</button>
             </div>
 
             <!-- Showroom Grid -->
@@ -70,7 +183,7 @@
                 <!-- Product 1 -->
                 <div class="product-card" data-category="rings">
                     <div class="product-img">
-                        <img src="images/diamond_macro.png" alt="Aurelia Solitär Diamantring">
+                        <img src="images/diamond_macro.png" alt="Aurelia Solitär Diamantring" loading="lazy" width="600" height="400">
                     </div>
                     <div class="product-info">
                         <span class="product-category" data-i18n="filter-rings">Ringe</span>
@@ -86,7 +199,7 @@
                 <!-- Product 2 -->
                 <div class="product-card" data-category="necklaces">
                     <div class="product-img">
-                        <img src="images/gold_watch_stone.png" alt="18k Italienisches Gelbgold Collier">
+                        <img src="images/gold_watch_stone.png" alt="18k Italienisches Gelbgold Collier" loading="lazy" width="600" height="400">
                     </div>
                     <div class="product-info">
                         <span class="product-category" data-i18n="filter-necklaces">Ketten</span>
@@ -102,12 +215,44 @@
                 <!-- Product 3 -->
                 <div class="product-card" data-category="rings">
                     <div class="product-img">
-                        <img src="images/hero_bruneck.png" alt="Eheringe Bruneck Edition">
+                        <img src="images/hero_bruneck.png" alt="Eheringe Bruneck Edition" loading="lazy" width="1920" height="1080">
                     </div>
                     <div class="product-info">
                         <span class="product-category" data-i18n="filter-rings">Ringe</span>
                         <h3 class="product-title" data-i18n="prod-3-title">Eheringe Dolomiti</h3>
                         <p class="product-desc" data-i18n="prod-3-desc">Individuell gestaltetes Ehering-Paar aus 18k Gelbgold und Weißgold. Strukturierte Oberfläche, inspiriert von den Dolomiten.</p>
+                        <div class="product-meta">
+                            <span class="product-price" data-i18n="prod-price-request">Auf Anfrage</span>
+                            <a href="kontakt.html" class="product-cta" data-i18n="btn-inquire">Details anfragen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="tradition">
+                    <div class="product-img">
+                        <img src="images/lebensbaum_gold.png" alt="Elegantes Collier Lebensbaum aus 18k Gelbgold" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category" data-i18n="filter-tradition">Tradition & Geschenke</span>
+                        <h3 class="product-title" data-i18n="prod-taufe-title">Collier „Lebensbaum“</h3>
+                        <p class="product-desc" data-i18n="prod-taufe-desc">Filigranes 18-karätiges Gelbgold-Collier mit einem fein ausgearbeiteten Lebensbaum-Anhänger. Ein zeitloses Symbol für Wachstum und Familie – ideal als Geschenk für Lebensmeilensteine.</p>
+                        <div class="product-meta">
+                            <span class="product-price" data-i18n="prod-price-request">Auf Anfrage</span>
+                            <a href="kontakt.html" class="product-cta" data-i18n="btn-inquire">Details anfragen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="tradition">
+                    <div class="product-img">
+                        <img src="images/kinderohrringe_gold.png" alt="Kinder-Sternstecker aus 18k Gelbgold" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category" data-i18n="filter-tradition">Tradition & Geschenke</span>
+                        <h3 class="product-title" data-i18n="prod-kinder-title">Stern-Ohrstecker „Stella“</h3>
+                        <p class="product-desc" data-i18n="prod-kinder-desc">Kleine, zarte Stern-Ohrstecker aus allergenfreiem 18k Gelbgold. Perfekt abgerundet und sicher für empfindliche Kinderohren.</p>
                         <div class="product-meta">
                             <span class="product-price" data-i18n="prod-price-request">Auf Anfrage</span>
                             <a href="kontakt.html" class="product-cta" data-i18n="btn-inquire">Details anfragen</a>
@@ -123,7 +268,7 @@
     <!-- Bottom CTA Banner -->
     <section class="section-padding" style="border-top: 1px solid var(--border-color); text-align: center; background-color: #0b0b0b;">
         <div class="container" style="max-width: 800px;">
-            <h2 data-i18n="bottom-cta-title" style="font-size: 2.2rem; margin-bottom: 1.5rem;">Besuchen Sie uns in Bruneck</h2>
+            <h2 data-i18n="bottom-cta-title">Besuchen Sie uns in Bruneck</h2>
             <p data-i18n="bottom-cta-text" style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--text-muted);">Erleben Sie unsere erlesenen Kollektionen und unseren meisterhaften Service persönlich in der historischen Stadtgasse.</p>
             <a href="kontakt.html" class="btn btn-primary" data-i18n="nav-kontakt">Kontakt</a>
         </div>
@@ -171,5 +316,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+

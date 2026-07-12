@@ -2,10 +2,13 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Juwelier Laner | Ihr Juwelier in Bruneck & Goldschmiede im Pustertal</title>
     <meta name="description" content="Seit Generationen Ihr Partner für erlesenen Schmuck, meisterhaftes Handwerk, Trauringe und zertifizierten Uhrenservice in Bruneck. Steuerfreies Einkaufen (Tax-Free) möglich.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -18,7 +21,7 @@
             </a>
 
             <!-- Mobile Hamburger Toggle -->
-            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle" aria-expanded="false" aria-controls="nav-links">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -54,7 +57,7 @@
         <!-- Section 1: Hero -->
         <section class="hero">
             <div class="hero-bg">
-                <img src="images/hero_bruneck.png" alt="Couple's hands with custom 18k yellow gold wedding rings, historic town of Bruneck in Dolomites background">
+                <img src="images/hero_bruneck.png" alt="Couple's hands with custom 18k yellow gold wedding rings, historic town of Bruneck in Dolomites background" width="1920" height="1080">
             </div>
             <div class="hero-overlay"></div>
             <div class="container">
@@ -108,12 +111,15 @@
         <!-- Section 3: Focus Wedding -->
         <section class="split-section">
             <div class="split-image">
-                <img src="images/diamond_macro.png" alt="Macro studio photograph of a premium diamond engagement ring">
+                <img src="images/diamond_macro.png" alt="Macro studio photograph of a premium diamond engagement ring" loading="lazy" width="600" height="400">
             </div>
             <div class="split-content">
                 <h2 data-i18n="wedding-title">Für das größte „Ja“ Ihres Lebens.</h2>
-                <p data-i18n="wedding-text">Der Kauf von Eheringen ist ein magischer Moment. In entspannter Atmosphäre nehmen wir uns die Zeit, die Ihre Liebe verdient. Entdecken Sie handgefertigte Ringe aus Meisterhand.</p>
-                <a href="kontakt.html" class="gold-link" data-i18n="wedding-link">Mehr über unsere Trauring-Beratung erfahren →</a>
+                <p data-i18n="wedding-text">Der Kauf von Eheringen ist ein magischer Moment. In entspannter Atmosphäre nehmen wir uns die Zeit, die Ihre Liebe verdient. Entdecken Sie unsere exklusive Auswahl für den schönsten Tag im Leben.</p>
+                <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                    <a href="kontakt.html" class="gold-link" data-i18n="wedding-link">Mehr über unsere Trauring-Beratung erfahren →</a>
+                    <a href="verlobung.html" class="gold-link" data-i18n="verlobung-link" style="color: var(--gold-light);">Der Brunecker Verlobungs-Kompass (Ratgeber) →</a>
+                </div>
             </div>
         </section>
 
@@ -122,7 +128,7 @@
             <div class="container">
                 <div class="showcase-grid">
                     <div class="showcase-img">
-                        <img src="images/gold_watch_stone.png" alt="18k yellow gold Italian chains and luxury watches on dark stone">
+                        <img src="images/gold_watch_stone.png" alt="18k yellow gold Italian chains and luxury watches on dark stone" loading="lazy" width="600" height="400">
                     </div>
                     <div class="showcase-info">
                         <h2 data-i18n="intl-title">Italian Elegance meets Alpine Craftsmanship</h2>
@@ -158,7 +164,7 @@
                 <a href="geschichte.html" class="gold-link" data-i18n="heritage-link">Scopri l'artigianato locale →</a>
             </div>
             <div class="split-image">
-                <img src="images/boutique_interior.png" alt="Luxury jewelry boutique interior in Alpine Luxe design with wood and gold elements">
+                <img src="images/boutique_interior.png" alt="Luxury jewelry boutique interior in Alpine Luxe design with wood and gold elements" loading="lazy" width="600" height="400">
             </div>
         </section>
 
@@ -213,10 +219,10 @@
 
                         <div class="info-group">
                             <h4 data-i18n="label-email">E-Mail</h4>
-                            <p><a href="mailto:info@f-laner.it">info@f-laner.it</a></p>
+                            <p><a href="#" class="email-lnk" data-user="info" data-domain="f-laner.it">info [at] f-laner.it</a></p>
                         </div>
 
-                        <a href="https://maps.google.com/?q=Juwelier+Laner,+Stadtgasse+18,+39031+Bruneck" target="_blank" class="btn btn-secondary map-btn" data-i18n="route-btn">Route planen</a>
+                        <a href="https://maps.google.com/?q=Juwelier+Laner,+Stadtgasse+18,+39031+Bruneck" target="_blank" rel="noopener noreferrer" class="btn btn-secondary map-btn" data-i18n="route-btn">Route planen</a>
                     </div>
 
                 </div>
@@ -267,5 +273,15 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="back-to-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
 </body>
 </html>
+
+
+
+
+
+
