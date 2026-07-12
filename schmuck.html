@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Exklusiver Schmuck & Trauringe | Juwelier Laner Bruneck</title>
     <meta name="description" content="Entdecken Sie exklusiven handgefertigten Schmuck, feinstes 18k italienisches Gold und einzigartige Trauringe im digitalen Showroom von Juwelier Laner.">
+        <!-- Preload key typography assets to prevent layout shifts -->
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .gift-compass {
@@ -57,9 +61,20 @@
             color: var(--text-light);
         }
     </style>
-    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script>
+        // Inline language detection to prevent Flash of Untranslated Content (FUTC)
+        (function() {
+            let lang = "de";
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                lang = urlParams.get('lang') || localStorage.getItem("laner-lang") || "de";
+            } catch (e) {}
+            if (lang !== "de") {
+                document.documentElement.classList.add("lang-hiding");
+            }
+        })();
+    </script>
 </head>
 <body>
 
@@ -68,7 +83,7 @@
         <div class="container header-container">
             <a href="index.html" class="logo" id="header-logo">
                 <span class="title">Juwelier Laner</span>
-                <span class="subtitle">Bruneck · Dolomiten</span>
+                <span class="subtitle" data-i18n="logo-subtitle">Bruneck · Dolomiten</span>
             </a>
 
             <!-- Mobile Hamburger Toggle -->
@@ -86,7 +101,7 @@
                     <li><a href="schmuck.html" class="active" data-i18n="nav-schmuck">Schmuck & Kollektionen</a></li>
                     <li><a href="uhren.html" data-i18n="nav-uhren">Uhren</a></li>
                     <li><a href="service.html" data-i18n="nav-service">Service & Werkstatt</a></li>
-                    <li><a href="kontakt.html" data-i18n="nav-kontakt">Kontakt & Termin</a></li>
+                    <li><a href="kontakt.html" data-i18n="nav-kontakt">Kontakt</a></li>
                     
                 </ul>
             </nav>
@@ -280,7 +295,7 @@
             <div class="footer-brand">
                 <a href="index.html" class="logo">
                     <span class="title">Juwelier Laner</span>
-                    <span class="subtitle">Bruneck · Dolomiten</span>
+                    <span class="subtitle" data-i18n="logo-subtitle">Bruneck · Dolomiten</span>
                 </a>
                 <p data-i18n="footer-desc" style="margin-top: 1rem;">Ihr traditionsreiches Familienunternehmen für edlen Schmuck, feines italienisches Gold und zertifizierten Uhrenservice in Bruneck.</p>
             </div>
@@ -322,6 +337,7 @@
     </button>
 </body>
 </html>
+
 
 
 

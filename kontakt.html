@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Kontakt & Anfahrt | Ihr Juwelier in Bruneck</title>
     <meta name="description" content="Kontaktieren Sie uns für private Termine, Trauringberatung oder Uhrenservice in Bruneck. Erfahren Sie mehr über steuerfreies Einkaufen (Tax-Free).">
+        <!-- Preload key typography assets to prevent layout shifts -->
+    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .contact-grid {
@@ -37,9 +41,20 @@
             }
         }
     </style>
-    <link rel="preload" href="fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script>
+        // Inline language detection to prevent Flash of Untranslated Content (FUTC)
+        (function() {
+            let lang = "de";
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                lang = urlParams.get('lang') || localStorage.getItem("laner-lang") || "de";
+            } catch (e) {}
+            if (lang !== "de") {
+                document.documentElement.classList.add("lang-hiding");
+            }
+        })();
+    </script>
 </head>
 <body>
 
@@ -48,7 +63,7 @@
         <div class="container header-container">
             <a href="index.html" class="logo" id="header-logo">
                 <span class="title">Juwelier Laner</span>
-                <span class="subtitle">Bruneck · Dolomiten</span>
+                <span class="subtitle" data-i18n="logo-subtitle">Bruneck · Dolomiten</span>
             </a>
 
             <!-- Mobile Hamburger Toggle -->
@@ -66,7 +81,7 @@
                     <li><a href="schmuck.html" data-i18n="nav-schmuck">Schmuck & Kollektionen</a></li>
                     <li><a href="uhren.html" data-i18n="nav-uhren">Uhren</a></li>
                     <li><a href="service.html" data-i18n="nav-service">Service & Werkstatt</a></li>
-                    <li><a href="kontakt.html" class="active" data-i18n="nav-kontakt">Kontakt & Termin</a></li>
+                    <li><a href="kontakt.html" class="active" data-i18n="nav-kontakt">Kontakt</a></li>
                     
                 </ul>
             </nav>
@@ -99,18 +114,18 @@
 
                 <!-- Contact Details -->
                 <div class="contact-details local-details" style="background-color: var(--bg-card); padding: 3rem; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h2 data-i18n="trust-title" style="text-align: center; margin-bottom: 2rem;">Ihr Besuch in Bruneck</h2>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <h2 data-i18n="trust-title" style="text-align: center; margin-bottom: 1rem;">Ihr Besuch in Bruneck</h2>
                         
                         <div class="info-group">
                             <h4 data-i18n="hours-title">Öffnungszeiten</h4>
-                            <p data-i18n="hours-weekdays">Montag - Freitag: 09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr</p>
+                            <p data-i18n="hours-weekdays">Montag - Freitag:<br>09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr</p>
                             <p data-i18n="hours-sat">Samstag: 09:00 - 12:00 Uhr</p>
                         </div>
 
                         <div class="info-group">
                             <h4 data-i18n="address-title">Adresse</h4>
-                            <p>Stadtgasse 18, 39031 Bruneck (BZ), Südtirol, Italien</p>
+                            <p data-i18n="address-text">Stadtgasse 18, 39031 Bruneck (BZ),<br>Südtirol, Italien</p>
                         </div>
 
                         <div class="info-group">
@@ -147,7 +162,7 @@
             <div class="footer-brand">
                 <a href="index.html" class="logo">
                     <span class="title">Juwelier Laner</span>
-                    <span class="subtitle">Bruneck · Dolomiten</span>
+                    <span class="subtitle" data-i18n="logo-subtitle">Bruneck · Dolomiten</span>
                 </a>
                 <p data-i18n="footer-desc" style="margin-top: 1rem;">Ihr traditionsreiches Familienunternehmen für edlen Schmuck, feines italienisches Gold und zertifizierten Uhrenservice in Bruneck.</p>
             </div>
@@ -189,6 +204,7 @@
     </button>
 </body>
 </html>
+
 
 
 

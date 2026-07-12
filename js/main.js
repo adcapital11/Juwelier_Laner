@@ -87,9 +87,10 @@ const translations = {
         // Homepage Section 6: Trust & Local Info
         "trust-title": "Ihr Besuch in Bruneck",
         "hours-title": "Öffnungszeiten",
-        "hours-weekdays": "Montag - Freitag: 09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr",
+        "hours-weekdays": "Montag - Freitag:<br>09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr",
         "hours-sat": "Samstag: 09:00 - 12:00 Uhr",
         "address-title": "Adresse",
+        "address-text": "Stadtgasse 18, 39031 Bruneck (BZ),<br>Südtirol, Italien",
         "route-btn": "Route planen",
         
         // Showrooms (Secondary Pages)
@@ -115,6 +116,7 @@ const translations = {
         "repair-watch-text": "Komplette Revisionen mechanischer Uhrwerke mit 24 Monaten Garantie, Batteriewechsel, Wasserdichtigkeitsprüfungen und Werterhalt historischer Zeitmesser. Vertrauen Sie auf zertifizierte Meisterqualität.",
         
         "kontakt-page-title": "Kontakt",
+        "logo-subtitle": "Bruneck · Dolomiten",
         "kontakt-page-text": "Haben Sie Fragen oder Wünsche? Wir freuen uns darauf, Sie persönlich in unserem Geschäft in Bruneck zu begrüßen oder direkt von Ihnen zu hören.",
         "hosts-title": "Ihre Gastgeberinnen",
         "hosts-text": "Edith und Veronika Feil leiten das Traditionsgeschäft in der vierten Generation. Mit geschultem Auge für Ästhetik und tiefer Liebe zum Goldschmiedehandwerk stehen wir Ihnen persönlich beratend zur Seite, um Ihre Wünsche Wirklichkeit werden zu lassen.",
@@ -161,6 +163,10 @@ const translations = {
         "prod-4-desc": "Mechanische Perfektion. Automatischer Manufaktur-Chronograph mit einem Gehäuse aus massivem 18 Karat Gelbgold. Ein Statement zeitloser Eleganz, abgerundet durch ein handgenähtes Lederband.",
         "prod-5-title": "Stadtgasse Automatik",
         "prod-5-desc": "Hingabe an das Detail. Puristische Dreizeiger-Uhr mit mechanischem Handaufzug und edel versilbertem Zifferblatt – ein Tribut an den historischen Charakter unseres Brunecker Geschäfts.",
+        "prod-taufe-title": "Collier „Lebensbaum“",
+        "prod-taufe-desc": "Filigranes 18-karätiges Gelbgold-Collier mit einem fein ausgearbeiteten Lebensbaum-Anhänger. Ein zeitloses Symbol für Wachstum und Familie – ideal als Geschenk für Lebensmeilensteine.",
+        "prod-kinder-title": "Stern-Ohrstecker „Stella“",
+        "prod-kinder-desc": "Kleine, zarte Stern-Ohrstecker aus allergenfreiem 18k Gelbgold. Perfekt abgerundet und sicher für empfindliche Kinderohren.",
         "taxfree-p1": "Internationale Kunden mit Wohnsitz außerhalb der Europäischen Union (z. B. arabische Länder, Schweiz, USA) genießen bei Juwelier Laner den vollen Steuerrückerstattungs-Service.",
         "taxfree-p2": "Als offizieller Partner von Global Blue ermöglichen wir eine reibungslose und direkte Abwicklung der Mehrwertsteuerrückerstattung (VAT Refund) direkt bei uns im Geschäft in Bruneck.",
         "taxfree-li1": "Vorlage des Reisepasses genügt",
@@ -300,9 +306,10 @@ const translations = {
         // Homepage Section 6: Trust & Local Info
         "trust-title": "La tua visita a Brunico",
         "hours-title": "Orari di apertura",
-        "hours-weekdays": "Lunedì - Venerdì: ore 09:00 - 12:00, 15:00 - 18:30",
+        "hours-weekdays": "Lunedì - Venerdì:<br>ore 09:00 - 12:00, 15:00 - 18:30",
         "hours-sat": "Sabato: ore 09:00 - 12:00",
         "address-title": "Indirizzo",
+        "address-text": "Via Centrale 18, 39031 Brunico (BZ),<br>Alto Adige, Italia",
         "route-btn": "Calcola percorso",
         
         // Showrooms (Secondary Pages)
@@ -328,6 +335,7 @@ const translations = {
         "repair-watch-text": "Revisioni complete di movimenti meccanici con 24 mesi di garanzia, sostituzione batterie, test di impermeabilità e restauro. Affidatevi alla nostra qualità magistrale certificata.",
         
         "kontakt-page-title": "Contatti",
+        "logo-subtitle": "Brunico · Dolomiti",
         "kontakt-page-text": "Hai domande o desideri? Saremo lieti di accoglierti di persona nella nostra sede storica a Brunico o di ricevere un tuo messaggio.",
         "hosts-title": "Le vostre ospitanti",
         "hosts-text": "Edith e Veronika Feil guidano l'attività storica nella quarta generazione. Con un occhio attento all'estetica e un profondo amore per l'oreficeria artigianale, vi affianchiamo personalmente per realizzare i vostri desideri.",
@@ -374,6 +382,10 @@ const translations = {
         "prod-4-desc": "Perfezione meccanica. Cronografo automatico di manifattura con cassa in oro giallo massiccio 18k e cinturino in pelle di alligatore. Un simbolo di eleganza senza tempo.",
         "prod-5-title": "Stadtgasse Automatico",
         "prod-5-desc": "Dedizione al dettaglio. Orologio purista a tre lancette con movimento a carica manuale e quadrante argentato – dedicato al carattere storico del nostro negozio di Brunico.",
+        "prod-taufe-title": "Collier „Albero della Vita“",
+        "prod-taufe-desc": "Filigrana collana in oro giallo 18 carati con un ciondolo finemente lavorato che raffigura l'albero della vita. Un simbolo eterno di crescita e famiglia, ideale come regalo per le tappe importanti della vita.",
+        "prod-kinder-title": "Orecchini a lobo „Stella“",
+        "prod-kinder-desc": "Piccoli e delicati orecchini a lobo a forma di stella in oro giallo 18k anallergico. Perfettamente arrotondati e sicuri per le orecchie sensibili dei bambini.",
         "taxfree-p1": "I clienti internazionali residenti al di fuori dell'Unione Europea (es. Paesi Arabi, Svizzera, USA) beneficiano del servizio completo di rimborso dell'imposta.",
         "taxfree-p2": "Come partner ufficiale di Global Blue, offriamo un rimborso dell'IVA (VAT Refund) semplice e rapido direttamente presso la nostra gioielleria a Brunico.",
         "taxfree-li1": "È sufficiente esibire il passaporto",
@@ -513,9 +525,10 @@ const translations = {
         // Homepage Section 6: Trust & Local Info
         "trust-title": "Your Visit to Bruneck",
         "hours-title": "Opening Hours",
-        "hours-weekdays": "Monday - Friday: 09:00 AM - 12:00 PM, 03:00 PM - 06:30 PM",
+        "hours-weekdays": "Monday - Friday:<br>09:00 AM - 12:00 PM, 03:00 PM - 06:30 PM",
         "hours-sat": "Saturday: 09:00 AM - 12:00 PM",
         "address-title": "Address",
+        "address-text": "Stadtgasse 18, 39031 Bruneck (BZ),<br>South Tyrol, Italy",
         "route-btn": "Plan Route",
         
         // Showrooms (Secondary Pages)
@@ -541,6 +554,7 @@ const translations = {
         "repair-watch-text": "Complete servicing of mechanical movements, battery replacement, water resistance tests, and expert restorations.",
         
         "kontakt-page-title": "Contact",
+        "logo-subtitle": "Bruneck · Dolomites",
         "kontakt-page-text": "Do you have any questions or requests? We look forward to welcoming you in person at our flagship store in Bruneck or hearing from you directly.",
         "hosts-title": "Your Hosts",
         "hosts-text": "Edith and Veronika Feil lead the traditional boutique in the fourth generation. With a keen eye for aesthetics and a deep love for goldsmithing craftsmanship, we are personally by your side to make your wishes come true.",
@@ -587,6 +601,10 @@ const translations = {
         "prod-4-desc": "Mechanical perfection. Automatic manufacture chronograph in solid 18k yellow gold case with finest leather strap. A bold statement of timeless elegance.",
         "prod-5-title": "Stadtgasse Automatic",
         "prod-5-desc": "Devotion to detail. Elegant three-hand timepiece with mechanical manual wind and silver dial – a tribute to the historic character of our Bruneck boutique.",
+        "prod-taufe-title": "Collier \"Tree of Life\"",
+        "prod-taufe-desc": "Delicate 18-karat yellow gold necklace with a finely crafted Tree of Life pendant. A timeless symbol of growth and family - ideal as a gift for life milestones.",
+        "prod-kinder-title": "Star Studs \"Stella\"",
+        "prod-kinder-desc": "Small, delicate star-shaped stud earrings in hypoallergenic 18k yellow gold. Perfectly rounded and safe for sensitive children's ears.",
         "taxfree-p1": "International guests residing outside the European Union (e.g., Arab countries, Switzerland, USA) enjoy full tax refund service benefits at Juwelier Laner.",
         "taxfree-p2": "As an official Global Blue partner, we enable a seamless and direct VAT refund process directly at our shop in Bruneck.",
         "taxfree-li1": "Presentation of passport is sufficient",
@@ -723,7 +741,10 @@ function setLanguage(lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
         if (translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
+            const newValue = translations[lang][key];
+            if (el.innerHTML !== newValue) {
+                el.innerHTML = newValue;
+            }
         }
     });
 
@@ -731,12 +752,218 @@ function setLanguage(lang) {
     document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
         const key = el.getAttribute("data-i18n-placeholder");
         if (translations[lang][key]) {
-            el.setAttribute("placeholder", translations[lang][key]);
+            const newValue = translations[lang][key];
+            if (el.getAttribute("placeholder") !== newValue) {
+                el.setAttribute("placeholder", newValue);
+            }
         }
     });
 
     // Adjust document lang attribute
     document.documentElement.setAttribute("lang", lang);
+    document.documentElement.classList.add("lang-loaded");
+}
+
+// Initialise page-specific scripts after load or AJAX transition
+function initPageSpecifics() {
+    // 1. Basic Product Filter logic for secondary pages (Schmuck, Uhren)
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const productCards = document.querySelectorAll(".product-card");
+
+    filterButtons.forEach(btn => {
+        // Remove existing listener to avoid duplication if re-initialized
+        const newBtn = btn.cloneNode(true);
+        btn.parentNode.replaceChild(newBtn, btn);
+        newBtn.addEventListener("click", () => {
+            filterButtons.forEach(b => b.classList.remove("active"));
+            newBtn.classList.add("active");
+
+            const filterVal = newBtn.getAttribute("data-filter");
+
+            productCards.forEach(card => {
+                if (filterVal === "all") {
+                    card.style.display = "flex";
+                } else {
+                    const cardCategory = card.getAttribute("data-category");
+                    if (cardCategory === filterVal) {
+                        card.style.display = "flex";
+                    } else {
+                        card.style.display = "none";
+                    }
+                }
+            });
+        });
+    });
+
+    // 2. Gift card click programmatically triggers filter-btn click
+    const giftCards = document.querySelectorAll(".gift-card");
+    giftCards.forEach(card => {
+        const newCard = card.cloneNode(true);
+        card.parentNode.replaceChild(newCard, card);
+        newCard.addEventListener("click", () => {
+            const filterTarget = newCard.getAttribute("data-filter-target");
+            const targetBtn = document.querySelector(`.filter-btn[data-filter="${filterTarget}"]`);
+            if (targetBtn) {
+                targetBtn.click();
+                document.querySelector(".filter-bar").scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // 3. Testimonial slider logic
+    const slides = document.querySelectorAll(".testimonial-slide");
+    const dots = document.querySelectorAll(".testimonial-dots .dot");
+    let currentSlideIndex = 0;
+
+    function showSlide(index) {
+        if (slides.length === 0) return;
+        slides.forEach(slide => slide.classList.remove("active"));
+        dots.forEach(dot => dot.classList.remove("active"));
+        
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
+        currentSlideIndex = index;
+    }
+
+    window.currentSlide = function(index) {
+        showSlide(index);
+    };
+
+    if (slides.length > 0) {
+        if (window.slideInterval) clearInterval(window.slideInterval);
+        window.slideInterval = setInterval(() => {
+            let next = (currentSlideIndex + 1) % slides.length;
+            showSlide(next);
+        }, 8000); // Smooth rotation every 8 seconds
+    }
+
+    // 4. Decrypt email links
+    document.querySelectorAll(".email-lnk").forEach(lnk => {
+        const u = lnk.getAttribute("data-user");
+        const d = lnk.getAttribute("data-domain");
+        if (u && d) {
+            lnk.setAttribute("href", "mailto:" + u + "@" + d);
+            lnk.textContent = u + "@" + d;
+        }
+    });
+
+    // 5. Contact Form Control & Submit with premium micro-interactions
+    const contactForm = document.getElementById("contact-form");
+    const successMsg = document.getElementById("success-msg");
+
+    if (contactForm && successMsg) {
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector(".form-submit-btn");
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = currentLang === 'de' ? 'Wird gesendet...' : currentLang === 'it' ? 'Invio in corso...' : 'Sending...';
+
+            setTimeout(() => {
+                contactForm.style.display = "none";
+                successMsg.style.display = "block";
+                contactForm.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            }, 1200);
+        });
+    }
+
+    // 6. Back to Top Button Logic
+    const backToTopBtn = document.getElementById("back-to-top");
+    if (backToTopBtn) {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add("visible");
+            } else {
+                backToTopBtn.classList.remove("visible");
+            }
+        };
+        window.removeEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
+        
+        // Remove existing listener to avoid duplicates
+        const newBackToTopBtn = backToTopBtn.cloneNode(true);
+        backToTopBtn.parentNode.replaceChild(newBackToTopBtn, backToTopBtn);
+        newBackToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+}
+
+// Global AJAX Page Loader (Pjax Routing)
+function loadPage(url, pushState = true) {
+    const mainEl = document.querySelector("main");
+    if (!mainEl) return;
+
+    // Fade out main content
+    mainEl.style.transition = "opacity 0.2s ease-in-out";
+    mainEl.style.opacity = 0;
+
+    setTimeout(() => {
+        fetch(url)
+            .then(res => {
+                if (!res.ok) throw new Error("HTTP error " + res.status);
+                return res.text();
+            })
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, "text/html");
+
+                const newMain = doc.querySelector("main");
+                const newTitle = doc.querySelector("title");
+
+                if (newMain) {
+                    mainEl.innerHTML = newMain.innerHTML;
+                    mainEl.className = newMain.className;
+                    mainEl.setAttribute("style", newMain.getAttribute("style") || "");
+                    mainEl.style.transition = "opacity 0.2s ease-in-out";
+                    mainEl.style.opacity = 0;
+                }
+
+                if (newTitle) {
+                    document.title = newTitle.textContent;
+                }
+
+                if (pushState) {
+                    history.pushState(null, "", url);
+                }
+
+                // Re-apply language translations to new content
+                setLanguage(currentLang);
+
+                // Update active class on header links
+                const currentPath = window.location.pathname.split("/").pop() || "index.html";
+                document.querySelectorAll(".nav-links a").forEach(a => {
+                    const href = a.getAttribute("href");
+                    // Parse base href name
+                    const hrefBase = href ? href.split('?')[0].split('#')[0] : "";
+                    if (hrefBase === currentPath) {
+                        a.classList.add("active");
+                    } else {
+                        a.classList.remove("active");
+                    }
+                });
+
+                // Re-init page-specific scripts
+                initPageSpecifics();
+
+                // Scroll back to top
+                window.scrollTo(0, 0);
+
+                // Fade back in
+                setTimeout(() => {
+                    mainEl.style.opacity = 1;
+                }, 50);
+            })
+            .catch(err => {
+                console.error("AJAX navigation failed, falling back to full reload", err);
+                window.location.href = url;
+            });
+    }, 200);
 }
 
 // Initialise everything once DOM loads
@@ -783,11 +1010,33 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Intercept clicks on links for AJAX Page Transitions
+    document.addEventListener("click", e => {
+        const link = e.target.closest("a");
+        if (!link) return;
+
+        const href = link.getAttribute("href");
+        if (!href) return;
+
+        // Skip non-local URLs or target="_blank"
+        const isLocal = href && !href.startsWith("http") && !href.startsWith("#") && !href.startsWith("tel:") && !href.startsWith("mailto:");
+        if (!isLocal || link.getAttribute("target") === "_blank") return;
+
+        // Skip if clicking to trigger filters inside pages
+        if (link.classList.contains("filter-btn") || link.classList.contains("gift-card")) return;
+
+        e.preventDefault();
+        loadPage(href);
+    });
+
+    // Listen to browser back/forward buttons
+    window.addEventListener("popstate", () => {
+        loadPage(window.location.pathname + window.location.search, false);
+    });
 
     // Close modals when pressing the Escape key
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            // Close cookie modal if open
             const cookieModal = document.getElementById("cookie-modal");
             const cookieBanner = document.getElementById("cookie-banner");
             if (cookieModal && cookieModal.style.display === "flex") {
@@ -799,71 +1048,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Basic Product Filter logic for secondary pages (Schmuck, Uhren)
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const productCards = document.querySelectorAll(".product-card");
-
-    filterButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
-            filterButtons.forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-
-            const filterVal = btn.getAttribute("data-filter");
-
-            productCards.forEach(card => {
-                if (filterVal === "all") {
-                    card.style.display = "flex";
-                } else {
-                    const cardCategory = card.getAttribute("data-category");
-                    if (cardCategory === filterVal) {
-                        card.style.display = "flex";
-                    } else {
-                        card.style.display = "none";
-                    }
-                }
-            });
-        });
-    });
-
-    // Gift card click programmatically triggers filter-btn click
-    const giftCards = document.querySelectorAll(".gift-card");
-    giftCards.forEach(card => {
-        card.addEventListener("click", () => {
-            const filterTarget = card.getAttribute("data-filter-target");
-            const targetBtn = document.querySelector(`.filter-btn[data-filter="${filterTarget}"]`);
-            if (targetBtn) {
-                targetBtn.click();
-                // Smooth scroll to the product section
-                document.querySelector(".filter-bar").scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
-
-    // Testimonial slider logic
-    const slides = document.querySelectorAll(".testimonial-slide");
-    const dots = document.querySelectorAll(".testimonial-dots .dot");
-    let currentSlideIndex = 0;
-
-    function showSlide(index) {
-        if (slides.length === 0) return;
-        slides.forEach(slide => slide.classList.remove("active"));
-        dots.forEach(dot => dot.classList.remove("active"));
-        
-        slides[index].classList.add("active");
-        dots[index].classList.add("active");
-        currentSlideIndex = index;
-    }
-
-    window.currentSlide = function(index) {
-        showSlide(index);
-    };
-
-    if (slides.length > 0) {
-        setInterval(() => {
-            let next = (currentSlideIndex + 1) % slides.length;
-            showSlide(next);
-        }, 8000); // Smooth rotation every 8 seconds
-    }
+    // Initialize Page Specific Scripts
+    initPageSpecifics();
 
     // Initialize Cookie Consent Banner & Modal
     initCookieConsent();
@@ -995,16 +1181,6 @@ function initCookieConsent() {
         saveConsent(stats, func, mark);
     });
 
-    // Decrypt email links to protect against simple spam crawlers
-    document.querySelectorAll(".email-lnk").forEach(lnk => {
-        const u = lnk.getAttribute("data-user");
-        const d = lnk.getAttribute("data-domain");
-        if (u && d) {
-            lnk.setAttribute("href", "mailto:" + u + "@" + d);
-            lnk.textContent = u + "@" + d;
-        }
-    });
-
     // Make sure we trigger translation updates on banner elements
     setLanguage(currentLang);
     
@@ -1024,32 +1200,11 @@ function initCookieConsent() {
         
         try {
             localStorage.setItem("laner-cookie-consent", consentString);
-        } catch (e) {
-            // Silently ignore if localStorage is sandboxed/disabled
-        }
+        } catch (e) {}
 
-        // Set fallback cookie (valid for 365 days)
         setLanerCookie("laner-cookie-consent", consentString);
         
         banner.style.display = "none";
         modal.style.display = "none";
-    }
-
-    // Back to Top Button Logic
-    const backToTopBtn = document.getElementById("back-to-top");
-    if (backToTopBtn) {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add("visible");
-            } else {
-                backToTopBtn.classList.remove("visible");
-            }
-        });
-        backToTopBtn.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
     }
 }
