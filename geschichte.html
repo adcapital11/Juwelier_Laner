@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Geschichte | Juwelier Laner Bruneck</title>
+    <meta name="description" content="Erfahren Sie mehr über die über 130-jährige Geschichte von Juwelier Laner. Gegründet 1886 in Bruneck, geführt in Familientradition.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Timeline styling for history page */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 2rem 0;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            background-color: var(--border-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -0.5px;
+        }
+        .timeline-item {
+            padding: 2rem 3rem;
+            position: relative;
+            background-color: transparent;
+            width: 50%;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+        .timeline-item:nth-child(2) { animation-delay: 0.3s; }
+        .timeline-item:nth-child(3) { animation-delay: 0.5s; }
+        .timeline-item:nth-child(4) { animation-delay: 0.7s; }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: -6px;
+            background-color: var(--bg-dark);
+            border: 2px solid var(--gold);
+            top: 2.5rem;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+            text-align: right;
+        }
+        .right {
+            left: 50%;
+        }
+        .right::after {
+            left: -6px;
+        }
+        .timeline-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            position: relative;
+        }
+        .timeline-year {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+        .timeline-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 5rem;
+                padding-right: 1.5rem;
+                text-align: left;
+            }
+            .timeline-item::after {
+                left: 25px;
+                right: auto;
+            }
+            .left {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="header-logo">
+                <span class="title">Juwelier Laner</span>
+                <span class="subtitle">Bruneck · Dolomiten</span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                    <li><a href="geschichte.html" class="active" data-i18n="nav-history">Geschichte</a></li>
+                    <li><a href="schmuck.html" data-i18n="nav-schmuck">Schmuck & Kollektionen</a></li>
+                    <li><a href="uhren.html" data-i18n="nav-uhren">Uhren</a></li>
+                    <li><a href="service.html" data-i18n="nav-service">Service & Werkstatt</a></li>
+                    <li><a href="kontakt.html" data-i18n="nav-kontakt">Kontakt & Termin</a></li>
+                    <li>
+                        <a href="kontakt.html#tax-free" class="tax-badge" data-i18n="nav-taxfree">
+                            Steuerfrei Einkaufen
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <ul class="lang-switcher">
+                    <li data-lang="de" class="active">DE</li>
+                    <li data-lang="it">IT</li>
+                    <li data-lang="en">EN</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin-top: var(--header-height); padding: 5rem 0;">
+        <div class="container">
+            
+            <div class="showroom-intro">
+                <h1 data-i18n="nav-history">Geschichte</h1>
+                <p data-i18n="hist-subtitle">Ein Familienbetrieb mit Tradition seit 1886 in Bruneck.</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                
+                <!-- 1886 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1886</div>
+                        <h3 data-i18n="hist-1-title">Die Gründung</h3>
+                        <p data-i18n="hist-1-text">Florian Laner, ursprünglich aus Mühlbach stammend, gründet das Goldgeschäft in der historischen Stadtgasse von Bruneck.</p>
+                    </div>
+                </div>
+
+                <!-- 2nd Gen -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="hist-year-2">Nachkriegszeit</div>
+                        <h3 data-i18n="hist-2-title">Die zweite Generation</h3>
+                        <p data-i18n="hist-2-text">Florian übergibt das Geschäft an seine Tochter Friederike. Gemeinsam mit ihrem Mann Wilhelm, einem ausgebildeten Goldschmied, führt sie den Betrieb mit unermüdlicher Willenskraft durch die schweren Nachkriegsjahre.</p>
+                    </div>
+                </div>
+
+                <!-- 3rd Gen -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="hist-year-3">Wachstum</div>
+                        <h3 data-i18n="hist-3-title">Die Söhne übernehmen</h3>
+                        <p data-i18n="hist-3-text">Die Söhne Norbert und Bernhard übernehmen die Leitung und modernisieren den Familienbetrieb. Mit viel Leidenschaft bauen sie das Sortiment aus und passen es dem Zeitgeist an.</p>
+                    </div>
+                </div>
+
+                <!-- 4th Gen -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="hist-year-4">Heute</div>
+                        <h3 data-i18n="hist-4-title">Gegenwart & Zukunft</h3>
+                        <p data-i18n="hist-4-text">Edith und Veronika, die beiden Töchter von Norbert, leiten den Betrieb heute in der dritten und vierten Generation mit viel Enthusiasmus, Stil und fundiertem Fachwissen weiter.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="title">Juwelier Laner</span>
+                    <span class="subtitle">Bruneck · Dolomiten</span>
+                </a>
+                <p data-i18n="footer-desc" style="margin-top: 1rem;">Ihr traditionsreiches Familienunternehmen für edlen Schmuck, feines italienisches Gold und zertifizierten Uhrenservice in Bruneck.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h5 data-i18n="nav-schmuck">Schmuck & Kollektionen</h5>
+                <ul>
+                    <li><a href="schmuck.html" data-i18n="opt-wedding">Trauringe</a></li>
+                    <li><a href="schmuck.html" data-i18n="opt-jewelry">Feingold</a></li>
+                    <li><a href="schmuck.html">Diamantschmuck</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 data-i18n="nav-uhren">Uhren</h5>
+                <ul>
+                    <li><a href="uhren.html" data-i18n="filter-classic">Klassisch</a></li>
+                    <li><a href="uhren.html" data-i18n="filter-sport">Sportlich</a></li>
+                    <li><a href="uhren.html">Chronographen</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 data-i18n="nav-taxfree">Tax-Free Shopping</h5>
+                <p style="font-size: 0.85rem; margin-bottom: 1rem; color: var(--text-muted);">Internationale Gäste von außerhalb der EU profitieren von steuerfreiem Einkauf via Global Blue VAT Refund.</p>
+                <div class="tax-badge" data-i18n="taxfree-nav-badge">Tax-Free Service</div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p data-i18n="footer-rights">© 2026 Juwelier Laner. Alle Rechte vorbehalten.</p>
+            <ul class="footer-bottom-links">
+                <li><a href="impressum.html" data-i18n="footer-imprint">Impressum</a></li>
+                <li><a href="datenschutz.html" data-i18n="footer-privacy">Datenschutz</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            
+            <form id="booking-form">
+                <h3 data-i18n="modal-title">Beratungstermin vereinbaren</h3>
+                <p data-i18n="modal-subtitle">Wählen Sie Ihren Wunschtermin. Wir nehmen uns gerne Zeit für Sie.</p>
+                
+                <div class="form-group">
+                    <label for="booking-name" data-i18n="label-name">Name</label>
+                    <input type="text" id="booking-name" class="form-control" required data-i18n-placeholder="label-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-email" data-i18n="label-email">E-Mail-Adresse</label>
+                    <input type="email" id="booking-email" class="form-control" required data-i18n-placeholder="label-email">
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-phone" data-i18n="label-phone">Telefonnummer</label>
+                    <input type="tel" id="booking-phone" class="form-control" required data-i18n-placeholder="label-phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-service" data-i18n="label-service">Interesse / Service</label>
+                    <select id="booking-service" class="form-control">
+                        <option value="jewelry" data-i18n="opt-jewelry" selected>Exklusiver Schmuck</option>
+                        <option value="wedding" data-i18n="opt-wedding">Trauring- & Eheberatung</option>
+                        <option value="watch" data-i18n="opt-watch">Luxusuhren Beratung</option>
+                        <option value="repair" data-i18n="opt-repair">Werkstatt & Reparatur</option>
+                    </select>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label for="booking-date" data-i18n="label-date">Wunschdatum</label>
+                        <input type="date" id="booking-date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-time" data-i18n="label-time">Wunschuhrzeit</label>
+                        <input type="time" id="booking-time" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-msg" data-i18n="label-msg">Ihre Nachricht (optional)</label>
+                    <textarea id="booking-msg" class="form-control" rows="3" data-i18n-placeholder="label-msg"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn" data-i18n="btn-submit">Terminanfrage Senden</button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="success-message" id="success-msg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h4 data-i18n="success-title">Vielen Dank!</h4>
+                <p data-i18n="success-text">Ihre Terminanfrage ist bei uns eingegangen. Wir bestätigen Ihnen den Termin in Kürze per E-Mail.</p>
+                <button onclick="closeBookingModal()" class="btn btn-secondary" data-i18n="success-close">Fenster schließen</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

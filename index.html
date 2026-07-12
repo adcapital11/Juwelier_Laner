@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juwelier Laner | Bruneck, Dolomites | Premium Jewelry & Watches</title>
+    <meta name="description" content="Seit Generationen Ihr Partner für erlesenen Schmuck, meisterhaftes Handwerk, Trauringe und zertifizierten Uhrenservice in Bruneck. Steuerfreies Einkaufen (Tax-Free) möglich.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="header-logo">
+                <span class="title">Juwelier Laner</span>
+                <span class="subtitle">Bruneck · Dolomiten</span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active" data-i18n="nav-home">Home</a></li>
+                    <li><a href="geschichte.html" data-i18n="nav-history">Geschichte</a></li>
+                    <li><a href="schmuck.html" data-i18n="nav-schmuck">Schmuck & Kollektionen</a></li>
+                    <li><a href="uhren.html" data-i18n="nav-uhren">Uhren</a></li>
+                    <li><a href="service.html" data-i18n="nav-service">Service & Werkstatt</a></li>
+                    <li><a href="kontakt.html" data-i18n="nav-kontakt">Kontakt & Termin</a></li>
+                    <li>
+                        <a href="kontakt.html#tax-free" class="tax-badge" data-i18n="nav-taxfree">
+                            Steuerfrei Einkaufen
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Language Switcher (DE | IT | EN) -->
+                <ul class="lang-switcher">
+                    <li data-lang="de" class="active">DE</li>
+                    <li data-lang="it">IT</li>
+                    <li data-lang="en">EN</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Section 1: Hero -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="images/hero_bruneck.png" alt="Couple's hands with custom 18k yellow gold wedding rings, historic town of Bruneck in Dolomites background">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-i18n="hero-title">Werte, die Generationen verbinden.</h1>
+                    <p data-i18n="hero-subtitle">Seit Generationen Ihr Vertrauenspartner für erlesenen Schmuck und meisterhaftes Handwerk im Herzen des Pustertals.</p>
+                    <div class="cta-group">
+                        <button onclick="openBookingModal()" class="btn btn-primary" data-i18n="hero-cta-primary">Online-Termin buchen</button>
+                        <a href="schmuck.html" class="btn btn-secondary" data-i18n="hero-cta-secondary">Kollektionen entdecken</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Pillars -->
+        <section class="pillars section-padding">
+            <div class="container">
+                <div class="pillars-grid">
+                    
+                    <!-- Pillar 1 -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3 data-i18n="pillar-1-title">Meisterhandwerk</h3>
+                        <p data-i18n="pillar-1-text">Hauseigene Meisterwerkstatt für exklusive Schmuckanfertigungen und präzisen Uhrenservice.</p>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l3 13m2-20 3 6-3 13"/></svg>
+                        </div>
+                        <h3 data-i18n="pillar-2-title">Exklusive Auswahl</h3>
+                        <p data-i18n="pillar-2-text">Handverlesene Schmuckstücke, feinstes italienisches Gold und renommierte Uhrenmarken.</p>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3 data-i18n="pillar-3-title">Herzliche Beratung</h3>
+                        <p data-i18n="pillar-3-text">Diskrete Beratung in entspannter Atmosphäre – wir nehmen uns Zeit für Ihre Lebensbegleiter.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Focus Wedding -->
+        <section class="split-section">
+            <div class="split-image">
+                <img src="images/diamond_macro.png" alt="Macro studio photograph of a premium diamond engagement ring">
+            </div>
+            <div class="split-content">
+                <h2 data-i18n="wedding-title">Für das größte „Ja“ Ihres Lebens.</h2>
+                <p data-i18n="wedding-text">Der Kauf von Eheringen ist ein magischer Moment. In entspannter Atmosphäre nehmen wir uns die Zeit, die Ihre Liebe verdient. Entdecken Sie handgefertigte Ringe aus Meisterhand.</p>
+                <a href="javascript:void(0)" onclick="openBookingModal()" class="gold-link" data-i18n="wedding-link">Mehr über unsere Trauring-Beratung erfahren →</a>
+            </div>
+        </section>
+
+        <!-- Section 4: International Showcase -->
+        <section class="showcase-section section-padding">
+            <div class="container">
+                <div class="showcase-grid">
+                    <div class="showcase-img">
+                        <img src="images/gold_watch_stone.png" alt="18k yellow gold Italian chains and luxury watches on dark stone">
+                    </div>
+                    <div class="showcase-info">
+                        <h2 data-i18n="intl-title">Italian Elegance meets Alpine Craftsmanship</h2>
+                        <p data-i18n="intl-text">Discover true European refinement. We offer a curated selection of finest Italian gold jewelry and distinctive timepieces from renowned makers.</p>
+                        
+                        <div class="showcase-features">
+                            <!-- Feature 1 -->
+                            <div class="feature-box">
+                                <h4 data-i18n="feat-1-title">Premium Tax-Free Shopping</h4>
+                                <p data-i18n="feat-1-text">Seamless Global Blue VAT refund processing directly in-store.</p>
+                            </div>
+                            <!-- Feature 2 -->
+                            <div class="feature-box">
+                                <h4 data-i18n="feat-2-title">Italian & Alpine Authenticity</h4>
+                                <p data-i18n="feat-2-text">Certified 18-karat gold and diamonds with verified source certification.</p>
+                            </div>
+                            <!-- Feature 3 -->
+                            <div class="feature-box">
+                                <h4 data-i18n="feat-3-title">Private Consultation</h4>
+                                <p data-i18n="feat-3-text">Exclusive private appointments outside regular opening hours upon request.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Alpine Italian -->
+        <section class="split-section" id="geschichte">
+            <div class="split-content" style="background-color: #161616;">
+                <h2 data-i18n="heritage-title">L'Anima Alpina e l'Oro di Brunico.</h2>
+                <p data-i18n="heritage-text">Im historischen Herzen von Bruneck trifft Südtiroler Handwerkstradition auf zeitloses italienisches Design. So entstehen einzigartige Schmuckstücke, die die Geschichte unserer Heimat erzählen.</p>
+                <a href="geschichte.html" class="gold-link" data-i18n="heritage-link">Scopri l'artigianato locale →</a>
+            </div>
+            <div class="split-image">
+                <img src="images/boutique_interior.png" alt="Luxury jewelry boutique interior in Alpine Luxe design with wood and gold elements">
+            </div>
+        </section>
+
+        <!-- Section 6: Trust & Local Info -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="trust-grid">
+                    
+                    <!-- Testimonials Card -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon">“</div>
+                        <div class="testimonial-slider">
+                            <div class="testimonial-slide active">
+                                <p class="testimonial-text" data-i18n="review-1-text">„Auf der Suche nach Ohrringen bin ich auf das Schmuckgeschäft aufmerksam geworden. Die Verkäuferin war freundlich und sehr geduldig. Besonders gefallen hat mir die vielseitige Auswahl... Ein Geschäft, das ich definitiv weiterempfehlen kann!“</p>
+                                <span class="testimonial-author">Tobias K.</span>
+                            </div>
+                            <div class="testimonial-slide">
+                                <p class="testimonial-text" data-i18n="review-2-text">„Sehr freundliche Beratung und sehr hilfsbereit!“</p>
+                                <span class="testimonial-author">Armin Warda</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-dots">
+                            <span class="dot active" onclick="currentSlide(0)"></span>
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                        </div>
+                    </div>
+
+                    <!-- Local Info Details -->
+                    <div class="local-details">
+                        <h2 data-i18n="trust-title">Ihr Besuch in Bruneck</h2>
+                        
+                        <div class="info-group">
+                            <h4 data-i18n="hours-title">Öffnungszeiten</h4>
+                            <p data-i18n="hours-weekdays">Montag - Freitag: 09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr</p>
+                            <p data-i18n="hours-sat">Samstag: 09:00 - 12:00 Uhr</p>
+                        </div>
+
+                        <div class="info-group">
+                            <h4 data-i18n="address-title">Adresse</h4>
+                            <p>Stadtgasse 18, 39031 Bruneck (BZ), Südtirol, Italien</p>
+                        </div>
+
+                        <div class="info-group">
+                            <h4 data-i18n="label-phone">Telefon</h4>
+                            <p><a href="tel:+390474554035">+39 0474 554035</a></p>
+                        </div>
+
+                        <div class="info-group">
+                            <h4 data-i18n="label-email">E-Mail</h4>
+                            <p><a href="mailto:info@f-laner.it">info@f-laner.it</a></p>
+                        </div>
+
+                        <a href="https://maps.google.com/?q=Juwelier+Laner,+Stadtgasse+18,+39031+Bruneck" target="_blank" class="btn btn-secondary map-btn" data-i18n="route-btn">Route planen</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="title">Juwelier Laner</span>
+                    <span class="subtitle">Bruneck · Dolomiten</span>
+                </a>
+                <p data-i18n="footer-desc" style="margin-top: 1rem;">Ihr traditionsreiches Familienunternehmen für edlen Schmuck, feines italienisches Gold und zertifizierten Uhrenservice in Bruneck.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h5 data-i18n="nav-schmuck">Schmuck & Kollektionen</h5>
+                <ul>
+                    <li><a href="schmuck.html" data-i18n="opt-wedding">Trauringe</a></li>
+                    <li><a href="schmuck.html" data-i18n="opt-jewelry">Feingold</a></li>
+                    <li><a href="schmuck.html">Diamantschmuck</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 data-i18n="nav-uhren">Uhren</h5>
+                <ul>
+                    <li><a href="uhren.html" data-i18n="filter-classic">Klassisch</a></li>
+                    <li><a href="uhren.html" data-i18n="filter-sport">Sportlich</a></li>
+                    <li><a href="uhren.html">Chronographen</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 data-i18n="nav-taxfree">Tax-Free Shopping</h5>
+                <p style="font-size: 0.85rem; margin-bottom: 1rem; color: var(--text-muted);">Internationale Gäste von außerhalb der EU profitieren von steuerfreiem Einkauf via Global Blue VAT Refund.</p>
+                <div class="tax-badge" data-i18n="taxfree-nav-badge">Tax-Free Service</div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p data-i18n="footer-rights">© 2026 Juwelier Laner. Alle Rechte vorbehalten.</p>
+            <ul class="footer-bottom-links">
+                <li><a href="impressum.html" data-i18n="footer-imprint">Impressum</a></li>
+                <li><a href="datenschutz.html" data-i18n="footer-privacy">Datenschutz</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            
+            <form id="booking-form">
+                <h3 data-i18n="modal-title">Beratungstermin vereinbaren</h3>
+                <p data-i18n="modal-subtitle">Wählen Sie Ihren Wunschtermin. Wir nehmen uns gerne Zeit für Sie.</p>
+                
+                <div class="form-group">
+                    <label for="booking-name" data-i18n="label-name">Name</label>
+                    <input type="text" id="booking-name" class="form-control" required data-i18n-placeholder="label-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-email" data-i18n="label-email">E-Mail-Adresse</label>
+                    <input type="email" id="booking-email" class="form-control" required data-i18n-placeholder="label-email">
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-phone" data-i18n="label-phone">Telefonnummer</label>
+                    <input type="tel" id="booking-phone" class="form-control" required data-i18n-placeholder="label-phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-service" data-i18n="label-service">Interesse / Service</label>
+                    <select id="booking-service" class="form-control">
+                        <option value="wedding" data-i18n="opt-wedding">Trauring- & Eheberatung</option>
+                        <option value="jewelry" data-i18n="opt-jewelry">Exklusiver Schmuck</option>
+                        <option value="watch" data-i18n="opt-watch">Luxusuhren Beratung</option>
+                        <option value="repair" data-i18n="opt-repair">Werkstatt & Reparatur</option>
+                    </select>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label for="booking-date" data-i18n="label-date">Wunschdatum</label>
+                        <input type="date" id="booking-date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-time" data-i18n="label-time">Wunschuhrzeit</label>
+                        <input type="time" id="booking-time" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-msg" data-i18n="label-msg">Ihre Nachricht (optional)</label>
+                    <textarea id="booking-msg" class="form-control" rows="3" data-i18n-placeholder="label-msg"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn" data-i18n="btn-submit">Terminanfrage Senden</button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="success-message" id="success-msg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h4 data-i18n="success-title">Vielen Dank!</h4>
+                <p data-i18n="success-text">Ihre Terminanfrage ist bei uns eingegangen. Wir bestätigen Ihnen den Termin in Kürze per E-Mail.</p>
+                <button onclick="closeBookingModal()" class="btn btn-secondary" data-i18n="success-close">Fenster schließen</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

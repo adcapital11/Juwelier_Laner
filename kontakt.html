@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt & Terminbuchung | Juwelier Laner Bruneck</title>
+    <meta name="description" content="Kontaktieren Sie uns für private Termine, Trauringberatung oder Uhrenservice in Bruneck. Erfahren Sie mehr über steuerfreies Einkaufen (Tax-Free).">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="header-logo">
+                <span class="title">Juwelier Laner</span>
+                <span class="subtitle">Bruneck · Dolomiten</span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                    <li><a href="geschichte.html" data-i18n="nav-history">Geschichte</a></li>
+                    <li><a href="schmuck.html" data-i18n="nav-schmuck">Schmuck & Kollektionen</a></li>
+                    <li><a href="uhren.html" data-i18n="nav-uhren">Uhren</a></li>
+                    <li><a href="service.html" data-i18n="nav-service">Service & Werkstatt</a></li>
+                    <li><a href="kontakt.html" class="active" data-i18n="nav-kontakt">Kontakt & Termin</a></li>
+                    <li>
+                        <a href="kontakt.html#tax-free" class="tax-badge" data-i18n="nav-taxfree">
+                            Steuerfrei Einkaufen
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <ul class="lang-switcher">
+                    <li data-lang="de" class="active">DE</li>
+                    <li data-lang="it">IT</li>
+                    <li data-lang="en">EN</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin-top: var(--header-height); padding: 5rem 0;">
+        <div class="container">
+            
+            <div class="showroom-intro">
+                <h1 data-i18n="kontakt-page-title">Kontakt & Buchung</h1>
+                <p data-i18n="kontakt-page-text">Haben Sie Fragen oder möchten Sie einen Termin außerhalb der Öffnungszeiten vereinbaren? Kontaktieren Sie uns direkt.</p>
+            </div>
+
+            <!-- Form and Info Columns -->
+            <div class="service-details-grid" style="align-items: flex-start; margin-bottom: 6rem;">
+                
+                <!-- Contact Details -->
+                <div class="local-details" style="background-color: var(--bg-card); padding: 3rem; border: 1px solid var(--border-color);">
+                    <h2 data-i18n="trust-title">Ihr Besuch in Bruneck</h2>
+                    
+                    <div class="info-group">
+                        <h4 data-i18n="hours-title">Öffnungszeiten</h4>
+                        <p data-i18n="hours-weekdays">Montag - Freitag: 09:00 - 12:00 Uhr, 15:00 - 18:30 Uhr</p>
+                        <p data-i18n="hours-sat">Samstag: 09:00 - 12:00 Uhr</p>
+                    </div>
+
+                    <div class="info-group">
+                        <h4 data-i18n="address-title">Adresse</h4>
+                        <p>Stadtgasse 18, 39031 Bruneck (BZ), Südtirol, Italien</p>
+                    </div>
+
+                    <div class="info-group">
+                        <h4 data-i18n="label-phone">Telefon</h4>
+                        <p><a href="tel:+390474554035">+39 0474 554035</a></p>
+                    </div>
+
+                    <div class="info-group">
+                        <h4 data-i18n="label-email">E-Mail</h4>
+                        <p><a href="mailto:info@f-laner.it">info@f-laner.it</a></p>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=Juwelier+Laner,+Stadtgasse+18,+39031+Bruneck" target="_blank" class="btn btn-secondary map-btn" data-i18n="route-btn">Route planen</a>
+                </div>
+
+                <!-- Inline Appointment Form -->
+                <div style="background-color: var(--bg-card); padding: 3rem; border: 1px solid var(--border-color);">
+                    <form id="booking-form">
+                        <h3 data-i18n="modal-title" style="font-size: 1.8rem; margin-bottom: 0.5rem;">Beratungstermin vereinbaren</h3>
+                        <p data-i18n="modal-subtitle" style="font-size: 0.9rem; margin-bottom: 2rem;">Wählen Sie Ihren Wunschtermin. Wir nehmen uns gerne Zeit für Sie.</p>
+                        
+                        <div class="form-group">
+                            <label for="booking-name" data-i18n="label-name">Name</label>
+                            <input type="text" id="booking-name" class="form-control" required data-i18n-placeholder="label-name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-email" data-i18n="label-email">E-Mail-Adresse</label>
+                            <input type="email" id="booking-email" class="form-control" required data-i18n-placeholder="label-email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-phone" data-i18n="label-phone">Telefonnummer</label>
+                            <input type="tel" id="booking-phone" class="form-control" required data-i18n-placeholder="label-phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-service" data-i18n="label-service">Interesse / Service</label>
+                            <select id="booking-service" class="form-control">
+                                <option value="wedding" data-i18n="opt-wedding">Trauring- & Eheberatung</option>
+                                <option value="jewelry" data-i18n="opt-jewelry">Exklusiver Schmuck</option>
+                                <option value="watch" data-i18n="opt-watch">Luxusuhren Beratung</option>
+                                <option value="repair" data-i18n="opt-repair">Werkstatt & Reparatur</option>
+                            </select>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label for="booking-date" data-i18n="label-date">Wunschdatum</label>
+                                <input type="date" id="booking-date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time" data-i18n="label-time">Wunschuhrzeit</label>
+                                <input type="time" id="booking-time" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="booking-msg" data-i18n="label-msg">Ihre Nachricht (optional)</label>
+                            <textarea id="booking-msg" class="form-control" rows="3" data-i18n-placeholder="label-msg"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn" data-i18n="btn-submit">Terminanfrage Senden</button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="success-message" id="success-msg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <h4 data-i18n="success-title">Vielen Dank!</h4>
+                        <p data-i18n="success-text">Ihre Terminanfrage ist bei uns eingegangen. Wir bestätigen Ihnen den Termin in Kürze per E-Mail.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tax-Free Shopping Section -->
+            <section id="tax-free" class="service-card" style="border: 1px solid var(--gold); margin-top: 4rem;">
+                <h2 data-i18n="feat-1-title" style="color: var(--gold); font-size: 2.2rem; margin-bottom: 1.5rem;">Premium Tax-Free Shopping</h2>
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: center;">
+                    <div>
+                        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8;" data-i18n="taxfree-p1">
+                            Internationale Kunden mit Wohnsitz außerhalb der Europäischen Union (z. B. arabische Länder, Schweiz, USA) genießen bei Juwelier Laner den vollen Steuerrückerstattungs-Service.
+                        </p>
+                        <p style="margin-bottom: 1.5rem;" data-i18n="taxfree-p2">
+                            Als offizieller Partner von <strong>Global Blue</strong> ermöglichen wir eine reibungslose und direkte Abwicklung der Mehrwertsteuerrückerstattung (VAT Refund) direkt bei uns im Geschäft in Bruneck.
+                        </p>
+                        <ul style="list-style: none; margin-left: 0; padding-left: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+                            <li data-i18n="taxfree-li1">✓ Vorlage des Reisepasses genügt</li>
+                            <li data-i18n="taxfree-li2">✓ Sofortige Erstellung des Global Blue Tax Free Formulars</li>
+                            <li data-i18n="taxfree-li3">✓ Einfache Zollvalidierung am Flughafen</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="tax-badge" style="font-size: 1rem; padding: 1rem 2rem; border-width: 2px;">GLOBAL BLUE TAX FREE</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="title">Juwelier Laner</span>
+                    <span class="subtitle">Bruneck · Dolomiten</span>
+                </a>
+                <p data-i18n="footer-desc" style="margin-top: 1rem;">Ihr traditionsreiches Familienunternehmen für edlen Schmuck, feines italienisches Gold und zertifizierten Uhrenservice in Bruneck.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h5 data-i18n="nav-schmuck">Schmuck & Kollektionen</h5>
+                <ul>
+                    <li><a href="schmuck.html" data-i18n="opt-wedding">Trauringe</a></li>
+                    <li><a href="schmuck.html" data-i18n="opt-jewelry">Feingold</a></li>
+                    <li><a href="schmuck.html">Diamantschmuck</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 data-i18n="nav-uhren">Uhren</h5>
+                <ul>
+                    <li><a href="uhren.html" data-i18n="filter-classic">Klassisch</a></li>
+                    <li><a href="uhren.html" data-i18n="filter-sport">Sportlich</a></li>
+                    <li><a href="uhren.html">Chronographen</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 data-i18n="nav-taxfree">Tax-Free Shopping</h5>
+                <p style="font-size: 0.85rem; margin-bottom: 1rem; color: var(--text-muted);">Internationale Gäste von außerhalb der EU profitieren von steuerfreiem Einkauf via Global Blue VAT Refund.</p>
+                <div class="tax-badge" data-i18n="taxfree-nav-badge">Tax-Free Service</div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p data-i18n="footer-rights">© 2026 Juwelier Laner. Alle Rechte vorbehalten.</p>
+            <ul class="footer-bottom-links">
+                <li><a href="impressum.html" data-i18n="footer-imprint">Impressum</a></li>
+                <li><a href="datenschutz.html" data-i18n="footer-privacy">Datenschutz</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
