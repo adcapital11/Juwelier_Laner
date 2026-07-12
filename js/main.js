@@ -7,33 +7,30 @@ const translations = {
         "nav-schmuck": "Schmuck & Kollektionen",
         "nav-uhren": "Uhren",
         "nav-service": "Service & Werkstatt",
-        "nav-kontakt": "Kontakt & Termin",
-        "nav-taxfree": "Steuerfrei Einkaufen",
+        "nav-kontakt": "Kontakt",
+        "nav-taxfree": "",
         
-        // Modal
-        "modal-title": "Beratungstermin vereinbaren",
-        "modal-subtitle": "Wählen Sie Ihren Wunschtermin. Wir nehmen uns gerne Zeit für Sie.",
+        // Modal / Contact Form
+        "contact-form-title": "Schreiben Sie uns",
+        "contact-form-subtitle": "Haben Sie Fragen? Wir freuen uns auf Ihre Nachricht.",
+        "btn-send-message": "Nachricht senden",
+        "success-text-contact": "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.",
         "label-name": "Name",
         "label-email": "E-Mail-Adresse",
         "label-phone": "Telefonnummer",
-        "label-service": "Interesse / Service",
-        "label-date": "Wunschdatum",
-        "label-time": "Wunschuhrzeit",
-        "label-msg": "Ihre Nachricht (optional)",
-        "opt-wedding": "Trauringberatung",
-        "opt-jewelry": "Exklusiver Schmuck",
-        "opt-watch": "Luxusuhren Beratung",
-        "opt-repair": "Werkstatt & Reparatur",
-        "btn-submit": "Terminanfrage Senden",
+        "label-msg": "Ihre Nachricht",
+        "btn-submit": "Absenden",
         "success-title": "Vielen Dank!",
-        "success-text": "Ihre Terminanfrage ist bei uns eingegangen. Wir bestätigen Ihnen den Termin in Kürze per E-Mail.",
+        "success-text": "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.",
         "success-close": "Fenster schließen",
         
         // Homepage Section 1: Hero
         "hero-title": "Werte, die Generationen verbinden.",
-        "hero-subtitle": "Seit Generationen Ihr Vertrauenspartner für erlesenen Schmuck und meisterhaftes Handwerk im Herzen des Pustertals.",
-        "hero-cta-primary": "Online-Termin buchen",
+        "hero-subtitle": "Seit Generationen Ihr traditionsreicher Juwelier in Bruneck – Ihr Vertrauenspartner für erlesene Schmuckstücke, feines italienisches Gold und zertifizierten Uhrenservice im Pustertal.",
+        "hero-cta-primary": "Kontakt aufnehmen",
         "hero-cta-secondary": "Kollektionen entdecken",
+        "bottom-cta-title": "Besuchen Sie uns in Bruneck",
+        "bottom-cta-text": "Erleben Sie unsere erlesenen Kollektionen und unseren meisterhaften Service persönlich in der historischen Stadtgasse.",
         
         // Homepage Section 2: Pillars
         "pillar-1-title": "Meisterhandwerk",
@@ -45,21 +42,21 @@ const translations = {
         
         // Homepage Section 3: Wedding Focus
         "wedding-title": "Für das größte „Ja“ Ihres Lebens.",
-        "wedding-text": "Der Kauf von Eheringen ist ein magischer Moment. In entspannter Atmosphäre nehmen wir uns die Zeit, die Ihre Liebe verdient. Entdecken Sie handgefertigte Ringe aus Meisterhand.",
+        "wedding-text": "Der Kauf von Eheringen ist ein magischer Moment. In entspannter Atmosphäre nehmen wir uns die Zeit, die Ihre Liebe verdient. Entdecken Sie unsere exklusive Auswahl für den schönsten Tag im Leben.",
         "wedding-link": "Mehr über unsere Trauring-Beratung erfahren →",
         
         // Homepage Section 4: International Showcase
         "intl-title": "Italienische Eleganz trifft alpines Handwerk",
         "intl-text": "Entdecken Sie europäische Raffinesse. Wir bieten Ihnen eine exklusive Auswahl feinster italienischer Goldschmiedekunst und erlesener Zeitmesser renommierter Marken.",
-        "feat-1-title": "Premium Tax-Free Shopping",
-        "feat-1-text": "Mühelose und schnelle Global Blue Mehrwertsteuerrückerstattung direkt bei uns im Geschäft.",
+        "feat-1-title": "Individuelle Anfertigung",
+        "feat-1-text": "Einzigartiger, handgefertigter Schmuck aus unserer Brunecker Werkstatt.",
         "feat-2-title": "Italienische & Alpine Echtheit",
         "feat-2-text": "Zertifiziertes 18-karätiges Gold und Diamanten mit Herkunftsnachweis.",
-        "feat-3-title": "Private Beratung",
-        "feat-3-text": "Exklusive Privat-Termine außerhalb unserer regulären Öffnungszeiten auf Anfrage.",
+        "feat-3-title": "Tradition seit 1886",
+        "feat-3-text": "Seit über 140 Jahren ein familiengeführtes Fachgeschäft im Herzen von Bruneck.",
         
         // Homepage Section 5: Alpine Italian
-        "heritage-title": "Die alpine Seele und das Gold von Bruneck.",
+        "heritage-title": "Alpine Seele und zeitlose Werte in Bruneck.",
         "heritage-text": "Bereits 1886 eröffnete Florian Laner das Goldgeschäft in der Stadtgasse von Bruneck. Über Friederike und den Goldschmied Wilhelm sowie die Söhne Norbert und Bernhard führen heute Edith und Veronika die traditionsreiche Geschichte in der vierten Generation fort.",
         "heritage-link": "Mehr über unsere Geschichte erfahren →",
         
@@ -89,12 +86,17 @@ const translations = {
         "service-title": "Meisterwerkstatt & Service",
         "service-text": "Handwerk aus Leidenschaft. In unserer hauseigenen Werkstatt pflegen und reparieren wir Ihre wertvollen Schmuckstücke und Uhren mit äußerster Präzision.",
         "repair-jewelry-title": "Goldschmiede-Atelier",
-        "repair-jewelry-text": "Individuelle Neuanfertigungen, Ringgrößen-Anpassungen, Aufarbeitungen und edle Gravuren für Ihre Erbstücke.",
+        "repair-jewelry-text": "Individuelle Neuanfertigungen, präzise Ringgrößen-Anpassungen, Aufarbeitungen und Gravuren. Beim Kauf von Trauringen ist die erste Größenanpassung sowie die Erstgravur für Sie kostenlos – inklusive lebenslanger Auffrischung und Reinigung Ihres bei uns erworbenen Schmucks.",
         "repair-watch-title": "Zertifizierter Uhrenservice",
-        "repair-watch-text": "Revisionen mechanischer Uhrwerke, Batteriewechsel, Wasserdichtigkeitsprüfungen und fachgerechte Restaurationen.",
+        "repair-watch-text": "Komplette Revisionen mechanischer Uhrwerke mit 24 Monaten Garantie, Batteriewechsel, Wasserdichtigkeitsprüfungen und Werterhalt historischer Zeitmesser. Vertrauen Sie auf zertifizierte Meisterqualität.",
         
-        "kontakt-page-title": "Kontakt & Buchung",
-        "kontakt-page-text": "Haben Sie Fragen oder möchten Sie einen Termin außerhalb der Öffnungszeiten vereinbaren? Kontaktieren Sie uns direkt.",
+        "kontakt-page-title": "Kontakt",
+        "kontakt-page-text": "Haben Sie Fragen oder Wünsche? Wir freuen uns darauf, Sie persönlich in unserem Geschäft in Bruneck zu begrüßen oder direkt von Ihnen zu hören.",
+        "hosts-title": "Ihre Gastgeberinnen",
+        "hosts-text": "Edith und Veronika Feil leiten das Traditionsgeschäft in der vierten Generation. Mit geschultem Auge für Ästhetik und tiefer Liebe zum Goldschmiedehandwerk stehen wir Ihnen persönlich beratend zur Seite, um Ihre Wünsche Wirklichkeit werden zu lassen.",
+        "host-1-role": "Geschäftsleitung & Beratung",
+        "host-2-role": "Goldschmiedemeisterin",
+        "success-text-contact": "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.",
         
         // Geschichte Timeline
         "hist-subtitle": "Ein Familienbetrieb mit Tradition seit 1886 in Bruneck.",
@@ -117,23 +119,24 @@ const translations = {
         "footer-imprint": "Impressum",
         "footer-privacy": "Datenschutz",
         "btn-inquire": "Details anfragen",
-        "btn-book-now": "Termin buchen",
+        "btn-book-now": "Jetzt kontaktieren",
         
         // Additional localized strings (DE)
         "reviews-text": "Erstklassige Kundenbewertungen auf Google",
         "review-1-text": "„Auf der Suche nach Ohrringen bin ich auf das Schmuckgeschäft aufmerksam geworden. Die Verkäuferin war freundlich und sehr geduldig. Besonders gefallen hat mir die vielseitige Auswahl... Ein Geschäft, das ich definitiv weiterempfehlen kann!“",
         "review-2-text": "„Sehr freundliche Beratung und sehr hilfsbereit!“",
+        "review-3-text": "„Wir haben hier unsere Eheringe gekauft. Die Beratung war absolut kompetent, ehrlich und ohne aufdringlich zu sein. Wir sind super zufrieden. Danke!“",
         "prod-price-request": "Auf Anfrage",
         "prod-1-title": "Solitär Aurelia",
-        "prod-1-desc": "Klassischer Platinring mit einem funkelnden Brillanten von 0.75 Karat im edlen Schliff. Perfekt für das Ja-Wort.",
+        "prod-1-desc": "Ein zeitloses Versprechen. Klassischer Platinring, der einen erlesenen Brillanten von 0,75 Karat in einer schwebenden Fassung zum Strahlen bringt – geschaffen für das größte Versprechen Ihres Lebens.",
         "prod-2-title": "Collier Verona",
-        "prod-2-desc": "Massives 18-karätiges italienisches Gelbgold-Collier, flach geschliffen für geschmeidigen Tragekomfort auf der Haut.",
+        "prod-2-desc": "Ein Hauch von italienischer Sonne. Massives Collier aus warm glänzendem 18k Gelbgold, kunstvoll flach geschliffen, um sich geschmeidig an Ihre Konturen zu legen.",
         "prod-3-title": "Eheringe Dolomiti",
-        "prod-3-desc": "Individuell gestaltetes Ehering-Paar aus 18k Gelbgold und Weißgold. Strukturierte Oberfläche, inspiriert von den Dolomiten.",
+        "prod-3-desc": "Verbundenheit mit der Heimat. Einzigartiges Ehering-Paar aus 18k Gelb- und Weißgold, dessen markant strukturierte Oberfläche den unvergänglichen Felswänden der Dolomiten nachempfunden ist.",
         "prod-4-title": "Atelier Chrono 18k",
-        "prod-4-desc": "Automatischer Manufaktur-Chronograph in massivem 18-karätigem Gelbgold-Gehäuse mit feinstem Alligator-Lederband.",
+        "prod-4-desc": "Mechanische Perfektion. Automatischer Manufaktur-Chronograph mit einem Gehäuse aus massivem 18 Karat Gelbgold. Ein Statement zeitloser Eleganz, abgerundet durch ein handgenähtes Lederband.",
         "prod-5-title": "Stadtgasse Automatik",
-        "prod-5-desc": "Schlichte, elegante Dreizeiger-Uhr mit Handaufzugswerk und versilbertem Zifferblatt – gewidmet unserem Brunecker Stammhaus.",
+        "prod-5-desc": "Hingabe an das Detail. Puristische Dreizeiger-Uhr mit mechanischem Handaufzug und edel versilbertem Zifferblatt – ein Tribut an den historischen Charakter unseres Brunecker Geschäfts.",
         "taxfree-p1": "Internationale Kunden mit Wohnsitz außerhalb der Europäischen Union (z. B. arabische Länder, Schweiz, USA) genießen bei Juwelier Laner den vollen Steuerrückerstattungs-Service.",
         "taxfree-p2": "Als offizieller Partner von Global Blue ermöglichen wir eine reibungslose und direkte Abwicklung der Mehrwertsteuerrückerstattung (VAT Refund) direkt bei uns im Geschäft in Bruneck.",
         "taxfree-li1": "Vorlage des Reisepasses genügt",
@@ -193,33 +196,30 @@ const translations = {
         "nav-schmuck": "Gioielli & Collezioni",
         "nav-uhren": "Orologi",
         "nav-service": "Servizio & Laboratorio",
-        "nav-kontakt": "Contatto & Appuntamento",
-        "nav-taxfree": "Shopping Tax-Free",
+        "nav-kontakt": "Contatto",
+        "nav-taxfree": "",
         
-        // Modal
-        "modal-title": "Prenota un Appuntamento",
-        "modal-subtitle": "Scegli la data che preferisci. Saremo lieti di dedicarti tutto il tempo necessario.",
+        // Modal / Contact Form
+        "contact-form-title": "Scrivici un messaggio",
+        "contact-form-subtitle": "Hai domande? Saremo lieti di rispondere al tuo messaggio.",
+        "btn-send-message": "Invia messaggio",
+        "success-text-contact": "Il tuo messaggio è stato inviato con successo. Ti risponderemo al più presto.",
         "label-name": "Nome",
         "label-email": "Indirizzo E-mail",
         "label-phone": "Numero di Telefono",
-        "label-service": "Interesse / Servizio",
-        "label-date": "Data desiderata",
-        "label-time": "Ora desiderata",
-        "label-msg": "Messaggio (opzionale)",
-        "opt-wedding": "Fedi nuziali & Anniversari",
-        "opt-jewelry": "Gioielleria Esclusiva",
-        "opt-watch": "Consulenza Orologi di Lusso",
-        "opt-repair": "Laboratorio & Riparazioni",
-        "btn-submit": "Invia Richiesta",
-        "success-title": "Grazie Mille!",
-        "success-text": "La tua richiesta è stata registrata. Ti confermeremo l'appuntamento via e-mail al più presto.",
+        "label-msg": "Il tuo messaggio",
+        "btn-submit": "Invia",
+        "success-title": "Grazie mille!",
+        "success-text": "Il tuo messaggio è stato inviato con successo. Ti risponderemo al più presto.",
         "success-close": "Chiudi finestra",
         
         // Homepage Section 1: Hero
         "hero-title": "Valori che uniscono le generazioni.",
-        "hero-subtitle": "Da generazioni il vostro partner di fiducia per gioielli raffinati e artigianato d'eccellenza nel cuore della Val Pusteria.",
-        "hero-cta-primary": "Prenota un appuntamento online",
+        "hero-subtitle": "Da generazioni la vostra gioielleria di fiducia a Brunico – il vostro partner per creazioni preziose, oro italiano a 18 carati e assistenza orologiaia certificata in Val Pusteria.",
+        "hero-cta-primary": "Contattaci",
         "hero-cta-secondary": "Scopri le collezioni",
+        "bottom-cta-title": "Venite a trovarci a Brunico",
+        "bottom-cta-text": "Vivete di persona le nostre raffinate collezioni e il nostro servizio magistrale nella storica Via Centrale.",
         
         // Homepage Section 2: Pillars
         "pillar-1-title": "Maestria Artigiana",
@@ -231,21 +231,21 @@ const translations = {
         
         // Homepage Section 3: Wedding Focus
         "wedding-title": "Per il „Sì“ più importante della tua vita.",
-        "wedding-text": "L'acquisto delle fedi nuziali è un momento magico. In un'atmosfera rilassata, ci prendiamo il tempo che il vostro amore merita. Venite a scoprire fedi fatte a mano dal nostro maestro orafo.",
+        "wedding-text": "L'acquisto delle fedi nuziali è un momento magico. In un'atmosfera rilassata, ci prendiamo il tempo che il vostro amore merita. Scoprite la nostra selezione esclusiva per il vostro giorno più bello.",
         "wedding-link": "Scopri di più sulla consulenza fedi nuziali →",
         
         // Homepage Section 4: International Showcase
         "intl-title": "L'eleganza italiana incontra l'artigianato alpino",
         "intl-text": "Scopri la vera raffinatezza europea. Offriamo una selezione curata della migliore oreficeria italiana e orologi distintivi di rinomati produttori.",
-        "feat-1-title": "Shopping Premium Tax-Free",
-        "feat-1-text": "Rimborso IVA Global Blue comodo e veloce direttamente in negozio.",
+        "feat-1-title": "Creazioni su misura",
+        "feat-1-text": "Gioielli unici fatti a mano realizzati nel nostro laboratorio di Brunico.",
         "feat-2-title": "Autenticità Alpina e Italiana",
         "feat-2-text": "Oro 18 carati certificato e diamanti con garanzia di origine controllata.",
-        "feat-3-title": "Consulenza Privata",
-        "feat-3-text": "Su richiesta, appuntamenti privati esclusivi anche al di fuori dei regolari orari di apertura.",
+        "feat-3-title": "Tradizione dal 1886",
+        "feat-3-text": "Da oltre 140 anni una gioielleria a conduzione familiare nel cuore di Brunico.",
         
         // Homepage Section 5: Alpine Italian
-        "heritage-title": "L'Anima Alpina e l'Oro di Brunico.",
+        "heritage-title": "Anima alpina e valori senza tempo a Brunico.",
         "heritage-text": "Nel 1886 Florian Laner aprì l'oreficeria nella Via Centrale (Stadtgasse) di Brunico. Attraverso Friederike e l'orefice Wilhelm, e successivamente i figli Norbert e Bernhard, oggi Edith e Veronika continuano con passione la tradizione di famiglia.",
         "heritage-link": "Scopri la nostra storia →",
         
@@ -275,12 +275,17 @@ const translations = {
         "service-title": "Laboratorio & Assistenza",
         "service-text": "Passione per l'artigianato. Nel nostro laboratorio interno curiamo e ripariamo i vostri preziosi orologi e gioielli con assoluta accuratezza.",
         "repair-jewelry-title": "Atelier Orafo",
-        "repair-jewelry-text": "Creazioni personalizzate, modifiche di misure di anelli, restauri e incisioni artistiche per i vostri ricordi di famiglia.",
+        "repair-jewelry-text": "Creazioni personalizzate, modifiche di misure di anelli, restauri e incisioni. Per l'acquisto delle fedi nuziali, la prima regolazione e l'incisione sono gratuite – compresa la pulizia e lucidatura a vita per i vostri gioielli acquistati da noi.",
         "repair-watch-title": "Assistenza Orologiera Certificata",
-        "repair-watch-text": "Revisioni di movimenti meccanici, sostituzione batterie, test di impermeabilità e restauri qualificati.",
+        "repair-watch-text": "Revisioni complete di movimenti meccanici con 24 mesi di garanzia, sostituzione batterie, test di impermeabilità e restauro. Affidatevi alla nostra qualità magistrale certificata.",
         
-        "kontakt-page-title": "Contatti & Prenotazioni",
-        "kontakt-page-text": "Hai domande o desideri concordare un appuntamento al di fuori degli orari di apertura? Contattaci direttamente.",
+        "kontakt-page-title": "Contatti",
+        "kontakt-page-text": "Hai domande o desideri? Saremo lieti di accoglierti di persona nella nostra sede storica a Brunico o di ricevere un tuo messaggio.",
+        "hosts-title": "Le vostre ospitanti",
+        "hosts-text": "Edith e Veronika Feil guidano l'attività storica nella quarta generazione. Con un occhio attento all'estetica e un profondo amore per l'oreficeria artigianale, vi affianchiamo personalmente per realizzare i vostri desideri.",
+        "host-1-role": "Direzione & Consulenza",
+        "host-2-role": "Maestra Orafa",
+        "success-text-contact": "Il tuo messaggio è stato inviato con successo. Ti risponderemo al più presto.",
         
         // Geschichte Timeline (IT)
         "hist-subtitle": "Un'azienda familiare con tradizione a Brunico dal 1886.",
@@ -303,23 +308,24 @@ const translations = {
         "footer-imprint": "Note legali",
         "footer-privacy": "Privacy",
         "btn-inquire": "Richiedi dettagli",
-        "btn-book-now": "Prenota appuntamento",
+        "btn-book-now": "Contattaci ora",
         
         // Additional localized strings (IT)
         "reviews-text": "Recensioni dei clienti eccellenti su Google",
         "review-1-text": "„Cercavo degli orecchini e ho notato questo negozio. La consulente è stata cordiale e molto paziente. Mi è piaciuta particolarmente la vasta scelta: ce n'è per tutti i gusti. Un negozio che consiglio vivamente!“",
         "review-2-text": "„Consulenza molto amichevole e davvero disponibile!“",
+        "review-3-text": "„Abbiamo acquistato qui le nostre fedi nuziali. La consulenza è stata assolutamente competente, onesta e per nulla invadente. Siamo super soddisfatti. Grazie!“",
         "prod-price-request": "Su richiesta",
         "prod-1-title": "Solitario Aurelia",
-        "prod-1-desc": "Classico anello in platino con un diamante brillante da 0,75 carati con taglio pregiato. Perfetto per la promessa d'amore.",
+        "prod-1-desc": "Una promessa senza tempo. Classico anello in platino che esalta la luce di un diamante brillante da 0,75 carati in un incastonatura sospesa – creato per il sì più importante.",
         "prod-2-title": "Collier Verona",
-        "prod-2-desc": "Massiccio collier in oro giallo italiano a 18 carati, rifinito piatto per una vestibilità morbida sulla pelle.",
+        "prod-2-desc": "Un tocco di sole italiano. Massiccio collier in oro giallo 18 carati, rifinito piatto per adagiarsi morbidamente sulla pelle.",
         "prod-3-title": "Fedi Dolomiti",
-        "prod-3-desc": "Coppia di fedi nuziali personalizzate in oro giallo e bianco 18k. Superficie strutturata ispirata alle Dolomiti.",
+        "prod-3-desc": "Legame con il territorio. Coppia unica di fedi in oro giallo e bianco 18k, con superficie strutturata ispirata alle pareti rocciose delle Dolomiti.",
         "prod-4-title": "Atelier Chrono 18k",
-        "prod-4-desc": "Cronografo automatico di manifattura con cassa in oro giallo massiccio 18k e cinturino in pelle di alligatore.",
+        "prod-4-desc": "Perfezione meccanica. Cronografo automatico di manifattura con cassa in oro giallo massiccio 18k e cinturino in pelle di alligatore. Un simbolo di eleganza senza tempo.",
         "prod-5-title": "Stadtgasse Automatico",
-        "prod-5-desc": "Orologio a tre lancette semplice ed elegante con movimento a carica manuale e quadrante argentato – dedicato alla nostra sede storica di Brunico.",
+        "prod-5-desc": "Dedizione al dettaglio. Orologio purista a tre lancette con movimento a carica manuale e quadrante argentato – dedicato al carattere storico del nostro negozio di Brunico.",
         "taxfree-p1": "I clienti internazionali residenti al di fuori dell'Unione Europea (es. Paesi Arabi, Svizzera, USA) beneficiano del servizio completo di rimborso dell'imposta.",
         "taxfree-p2": "Come partner ufficiale di Global Blue, offriamo un rimborso dell'IVA (VAT Refund) semplice e rapido direttamente presso la nostra gioielleria a Brunico.",
         "taxfree-li1": "È sufficiente esibire il passaporto",
@@ -379,33 +385,30 @@ const translations = {
         "nav-schmuck": "Jewelry & Collections",
         "nav-uhren": "Watches",
         "nav-service": "Service & Workshop",
-        "nav-kontakt": "Contact & Booking",
-        "nav-taxfree": "Tax-Free Shopping",
+        "nav-kontakt": "Contact",
+        "nav-taxfree": "",
         
-        // Modal
-        "modal-title": "Book an Appointment",
-        "modal-subtitle": "Choose your preferred date. We look forward to dedicating time to you.",
+        // Modal / Contact Form
+        "contact-form-title": "Write to us",
+        "contact-form-subtitle": "Do you have any questions? We look forward to your message.",
+        "btn-send-message": "Send message",
+        "success-text-contact": "Your message has been successfully sent. We will get back to you shortly.",
         "label-name": "Name",
         "label-email": "Email Address",
         "label-phone": "Phone Number",
-        "label-service": "Interest / Service",
-        "label-date": "Preferred Date",
-        "label-time": "Preferred Time",
-        "label-msg": "Your Message (optional)",
-        "opt-wedding": "Wedding Ring Consultation",
-        "opt-jewelry": "Exclusive Fine Jewelry",
-        "opt-watch": "Luxury Watch Consultation",
-        "opt-repair": "Workshop & Repairs",
-        "btn-submit": "Send Appointment Request",
+        "label-msg": "Your Message",
+        "btn-submit": "Submit",
         "success-title": "Thank you!",
-        "success-text": "Your request has been received. We will confirm your appointment via email shortly.",
+        "success-text": "Your message has been successfully sent. We will get back to you shortly.",
         "success-close": "Close window",
         
         // Homepage Section 1: Hero
         "hero-title": "Values connecting generations.",
-        "hero-subtitle": "For generations, your trusted partner for exquisite jewelry and masterful craftsmanship in the heart of the Puster Valley.",
-        "hero-cta-primary": "Book appointment online",
+        "hero-subtitle": "For generations, your traditional family jeweler in Bruneck – your trusted partner for exquisite jewelry, fine Italian gold, and master watch repair services in the Puster Valley.",
+        "hero-cta-primary": "Contact us",
         "hero-cta-secondary": "Discover collections",
+        "bottom-cta-title": "Visit Us in Bruneck",
+        "bottom-cta-text": "Experience our exquisite collections and master services in person at the historic Stadtgasse.",
         
         // Homepage Section 2: Pillars
         "pillar-1-title": "Master Craftsmanship",
@@ -417,21 +420,21 @@ const translations = {
         
         // Homepage Section 3: Wedding Focus
         "wedding-title": "For the biggest 'Yes' of your life.",
-        "wedding-text": "Buying wedding rings is a magical moment. In a relaxed atmosphere, we take the time your love deserves. Discover handmade custom rings crafted by our master jeweler.",
+        "wedding-text": "Buying wedding rings is a magical moment. In a relaxed atmosphere, we take the time your love deserves. Discover our exclusive selection of wedding bands.",
         "wedding-link": "Learn more about our wedding consultation →",
         
         // Homepage Section 4: International Showcase
         "intl-title": "Italian Elegance meets Alpine Craftsmanship",
         "intl-text": "Discover true European refinement. We offer a curated selection of finest Italian gold jewelry and distinctive timepieces from renowned makers.",
-        "feat-1-title": "Premium Tax-Free Shopping",
-        "feat-1-text": "Seamless Global Blue VAT refund processing directly in-store.",
+        "feat-1-title": "Bespoke Creations",
+        "feat-1-text": "Unique, handcrafted jewelry made to your vision in our Bruneck workshop.",
         "feat-2-title": "Italian & Alpine Authenticity",
         "feat-2-text": "Certified 18-karat gold and diamonds with verified source certification.",
-        "feat-3-title": "Private Consultation",
-        "feat-3-text": "Exclusive private appointments outside regular opening hours upon request.",
+        "feat-3-title": "Tradition since 1886",
+        "feat-3-text": "For over 140 years, a family-run boutique in the heart of Bruneck.",
         
         // Homepage Section 5: Alpine Italian
-        "heritage-title": "The Alpine Soul and the Gold of Bruneck.",
+        "heritage-title": "Alpine Soul and Timeless Values in Bruneck.",
         "heritage-text": "As early as 1886, Florian Laner opened the gold shop in the historic Stadtgasse of Bruneck. Passed down through Friederike and the goldsmith Wilhelm, and later the sons Norbert and Bernhard, today Edith and Veronika continue this proud family tradition.",
         "heritage-link": "Discover our heritage →",
         
@@ -461,12 +464,17 @@ const translations = {
         "service-title": "Workshop & Service",
         "service-text": "Bespoke jewelry repairs, clockwork revisions, and restoration services executed by professional hands in our in-house studio.",
         "repair-jewelry-title": "Goldsmith Atelier",
-        "repair-jewelry-text": "Custom designs, resizing rings, polishing, and beautiful hand-engravings for your precious heirlooms.",
+        "repair-jewelry-text": "Bespoke creations, precise ring resizing, refinishing, and engravings. With any wedding ring purchase, the first resizing and custom engraving are complimentary – including lifelong cleaning and polishing for all jewelry purchased from us.",
         "repair-watch-title": "Certified Watch Service",
         "repair-watch-text": "Complete servicing of mechanical movements, battery replacement, water resistance tests, and expert restorations.",
         
-        "kontakt-page-title": "Contact & Booking",
-        "kontakt-page-text": "Do you have questions or want to arrange a private appointment outside normal business hours? Reach out to us directly.",
+        "kontakt-page-title": "Contact",
+        "kontakt-page-text": "Do you have any questions or requests? We look forward to welcoming you in person at our flagship store in Bruneck or hearing from you directly.",
+        "hosts-title": "Your Hosts",
+        "hosts-text": "Edith and Veronika Feil lead the traditional boutique in the fourth generation. With a keen eye for aesthetics and a deep love for goldsmithing craftsmanship, we are personally by your side to make your wishes come true.",
+        "host-1-role": "Management & Consultation",
+        "host-2-role": "Master Goldsmith",
+        "success-text-contact": "Your message has been successfully sent. We will get back to you shortly.",
         
         // Geschichte Timeline (EN)
         "hist-subtitle": "A family business with tradition in Bruneck since 1886.",
@@ -489,23 +497,24 @@ const translations = {
         "footer-imprint": "Imprint",
         "footer-privacy": "Privacy Policy",
         "btn-inquire": "Inquire Details",
-        "btn-book-now": "Book Appointment",
+        "btn-book-now": "Contact us now",
         
         // Additional localized strings (EN)
         "reviews-text": "Excellent customer reviews on Google",
         "review-1-text": "„Looking for earrings, I came across this jewelry shop. The consultant was friendly and very patient. I particularly liked the versatile selection – there is something for every taste. A shop I can definitely recommend!“",
         "review-2-text": "„Very friendly advice and extremely helpful!“",
+        "review-3-text": "„We bought our wedding rings here. The consultation was absolutely competent, honest, and not pushy at all. We are super satisfied. Thank you!“",
         "prod-price-request": "On request",
         "prod-1-title": "Aurelia Solitaire",
-        "prod-1-desc": "Classic platinum ring featuring a sparkling 0.75-carat brilliant-cut diamond. Perfect for your proposal.",
+        "prod-1-desc": "A timeless promise. Classic platinum ring displaying a brilliant 0.75-carat diamond in a floating setting – crafted for the greatest promise of your life.",
         "prod-2-title": "Verona Collier",
-        "prod-2-desc": "Solid 18-karat yellow gold Italian chain, flat-finished for smooth comfort on the skin.",
+        "prod-2-desc": "A touch of Italian sun. Solid collier in warm 18k yellow gold, flat-finished to lay smoothly and comfortably against your skin.",
         "prod-3-title": "Dolomiti Wedding Rings",
-        "prod-3-desc": "Custom-designed wedding bands in 18k yellow and white gold. Textured surface inspired by the Dolomite peaks.",
+        "prod-3-desc": "Connection to the mountains. Unique wedding bands in 18k yellow and white gold, textured to mirror the timeless rock faces of the Dolomites.",
         "prod-4-title": "Atelier Chrono 18k",
-        "prod-4-desc": "Automatic manufacture chronograph in solid 18k yellow gold case with finest alligator leather strap.",
+        "prod-4-desc": "Mechanical perfection. Automatic manufacture chronograph in solid 18k yellow gold case with finest leather strap. A bold statement of timeless elegance.",
         "prod-5-title": "Stadtgasse Automatic",
-        "prod-5-desc": "Simple, elegant three-hand timepiece with manual wind movement and silver dial – dedicated to our Bruneck flagship boutique.",
+        "prod-5-desc": "Devotion to detail. Elegant three-hand timepiece with mechanical manual wind and silver dial – a tribute to the historic character of our Bruneck boutique.",
         "taxfree-p1": "International guests residing outside the European Union (e.g., Arab countries, Switzerland, USA) enjoy full tax refund service benefits at Juwelier Laner.",
         "taxfree-p2": "As an official Global Blue partner, we enable a seamless and direct VAT refund process directly at our shop in Bruneck.",
         "taxfree-li1": "Presentation of passport is sufficient",
@@ -684,52 +693,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Modal Control: Termine
-    const bookingModal = document.getElementById("booking-modal");
-    const closeBtn = document.querySelector(".modal-close");
-    const bookingForm = document.getElementById("booking-form");
+    // Contact Form Control & Submit with premium micro-interactions
+    const contactForm = document.getElementById("contact-form");
     const successMsg = document.getElementById("success-msg");
 
-    // Functions to toggle modal
-    window.openBookingModal = function() {
-        if (bookingModal) {
-            bookingModal.classList.add("active");
-            document.body.style.overflow = "hidden"; // Disable scroll behind modal
-        }
-    };
-
-    window.closeBookingModal = function() {
-        if (bookingModal) {
-            bookingModal.classList.remove("active");
-            document.body.style.overflow = ""; // Re-enable scroll
+    if (contactForm && successMsg) {
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
             
-            // Clean up state after modal closes
+            // Simulate API request to boutique mail desk
+            const submitBtn = contactForm.querySelector(".form-submit-btn");
+            const originalText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = currentLang === 'de' ? 'Wird gesendet...' : currentLang === 'it' ? 'Invio in corso...' : 'Sending...';
+
             setTimeout(() => {
-                if (bookingForm) bookingForm.style.display = "block";
-                if (successMsg) successMsg.style.display = "none";
-            }, 300);
-        }
-    };
-
-    if (closeBtn) {
-        closeBtn.addEventListener("click", closeBookingModal);
-    }
-
-    // Close modal when clicking dark overlay outside the content box
-    if (bookingModal) {
-        bookingModal.addEventListener("click", (e) => {
-            if (e.target === bookingModal) {
-                closeBookingModal();
-            }
+                contactForm.style.display = "none";
+                successMsg.style.display = "block";
+                contactForm.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            }, 1200);
         });
     }
 
     // Close modals when pressing the Escape key
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            closeBookingModal();
-            
-            // Also close cookie modal if open
+            // Close cookie modal if open
             const cookieModal = document.getElementById("cookie-modal");
             const cookieBanner = document.getElementById("cookie-banner");
             if (cookieModal && cookieModal.style.display === "flex") {
@@ -740,27 +731,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
-
-    // Handle Appointment form submission with premium micro-interactions
-    if (bookingForm) {
-        bookingForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            
-            // Simulate API request to boutique booking desk
-            const submitBtn = bookingForm.querySelector(".form-submit-btn");
-            const originalText = submitBtn.innerHTML;
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = currentLang === 'de' ? 'Wird gesendet...' : currentLang === 'it' ? 'Invio in corso...' : 'Sending...';
-
-            setTimeout(() => {
-                bookingForm.style.display = "none";
-                successMsg.style.display = "block";
-                bookingForm.reset();
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            }, 1200);
-        });
-    }
 
     // Basic Product Filter logic for secondary pages (Schmuck, Uhren)
     const filterButtons = document.querySelectorAll(".filter-btn");
@@ -812,6 +782,11 @@ document.addEventListener("DOMContentLoaded", () => {
             let next = (currentSlideIndex + 1) % slides.length;
             showSlide(next);
         }, 8000); // Smooth rotation every 8 seconds
+    } else {
+        // Fallback for older browsers
+        animateSections.forEach(section => {
+            section.classList.add("is-visible");
+        });
     }
 
     // Initialize Cookie Consent Banner & Modal

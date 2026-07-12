@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juwelier Laner | Bruneck, Dolomites | Premium Jewelry & Watches</title>
+    <title>Juwelier Laner | Ihr Juwelier in Bruneck & Goldschmiede im Pustertal</title>
     <meta name="description" content="Seit Generationen Ihr Partner für erlesenen Schmuck, meisterhaftes Handwerk, Trauringe und zertifizierten Uhrenservice in Bruneck. Steuerfreies Einkaufen (Tax-Free) möglich.">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,11 +33,7 @@
                     <li><a href="uhren.html" data-i18n="nav-uhren">Uhren</a></li>
                     <li><a href="service.html" data-i18n="nav-service">Service & Werkstatt</a></li>
                     <li><a href="kontakt.html" data-i18n="nav-kontakt">Kontakt & Termin</a></li>
-                    <li>
-                        <a href="kontakt.html#tax-free" class="tax-badge" data-i18n="nav-taxfree">
-                            Steuerfrei Einkaufen
-                        </a>
-                    </li>
+                    
                 </ul>
             </nav>
 
@@ -66,7 +62,7 @@
                     <h1 data-i18n="hero-title">Werte, die Generationen verbinden.</h1>
                     <p data-i18n="hero-subtitle">Seit Generationen Ihr Vertrauenspartner für erlesenen Schmuck und meisterhaftes Handwerk im Herzen des Pustertals.</p>
                     <div class="cta-group">
-                        <button onclick="openBookingModal()" class="btn btn-primary" data-i18n="hero-cta-primary">Online-Termin buchen</button>
+                        <a href="kontakt.html" class="btn btn-primary" data-i18n="hero-cta-primary">Kontakt aufnehmen</a>
                         <a href="schmuck.html" class="btn btn-secondary" data-i18n="hero-cta-secondary">Kollektionen entdecken</a>
                     </div>
                 </div>
@@ -117,7 +113,7 @@
             <div class="split-content">
                 <h2 data-i18n="wedding-title">Für das größte „Ja“ Ihres Lebens.</h2>
                 <p data-i18n="wedding-text">Der Kauf von Eheringen ist ein magischer Moment. In entspannter Atmosphäre nehmen wir uns die Zeit, die Ihre Liebe verdient. Entdecken Sie handgefertigte Ringe aus Meisterhand.</p>
-                <a href="javascript:void(0)" onclick="openBookingModal()" class="gold-link" data-i18n="wedding-link">Mehr über unsere Trauring-Beratung erfahren →</a>
+                <a href="kontakt.html" class="gold-link" data-i18n="wedding-link">Mehr über unsere Trauring-Beratung erfahren →</a>
             </div>
         </section>
 
@@ -135,8 +131,8 @@
                         <div class="showcase-features">
                             <!-- Feature 1 -->
                             <div class="feature-box">
-                                <h4 data-i18n="feat-1-title">Premium Tax-Free Shopping</h4>
-                                <p data-i18n="feat-1-text">Seamless Global Blue VAT refund processing directly in-store.</p>
+                                <h4 data-i18n="feat-1-title">Individuelle Anfertigung</h4>
+                                <p data-i18n="feat-1-text">Einzigartiger, handgefertigter Schmuck aus unserer Brunecker Werkstatt.</p>
                             </div>
                             <!-- Feature 2 -->
                             <div class="feature-box">
@@ -156,7 +152,7 @@
 
         <!-- Section 5: Alpine Italian -->
         <section class="split-section" id="geschichte">
-            <div class="split-content" style="background-color: #161616;">
+            <div class="split-content">
                 <h2 data-i18n="heritage-title">L'Anima Alpina e l'Oro di Brunico.</h2>
                 <p data-i18n="heritage-text">Im historischen Herzen von Bruneck trifft Südtiroler Handwerkstradition auf zeitloses italienisches Design. So entstehen einzigartige Schmuckstücke, die die Geschichte unserer Heimat erzählen.</p>
                 <a href="geschichte.html" class="gold-link" data-i18n="heritage-link">Scopri l'artigianato locale →</a>
@@ -183,10 +179,15 @@
                                 <p class="testimonial-text" data-i18n="review-2-text">„Sehr freundliche Beratung und sehr hilfsbereit!“</p>
                                 <span class="testimonial-author">Armin Warda</span>
                             </div>
+                            <div class="testimonial-slide">
+                                <p class="testimonial-text" data-i18n="review-3-text">„Wir haben hier unsere Eheringe gekauft. Die Beratung war absolut kompetent, ehrlich und ohne aufdringlich zu sein. Wir sind super zufrieden. Danke!“</p>
+                                <span class="testimonial-author">Andreas</span>
+                            </div>
                         </div>
                         <div class="testimonial-dots">
                             <span class="dot active" onclick="currentSlide(0)"></span>
                             <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
                         </div>
                     </div>
 
@@ -253,12 +254,7 @@
                 </ul>
             </div>
 
-            <div class="footer-col">
-                <h5 data-i18n="nav-taxfree">Tax-Free Shopping</h5>
-                <p style="font-size: 0.85rem; margin-bottom: 1rem; color: var(--text-muted);">Internationale Gäste von außerhalb der EU profitieren von steuerfreiem Einkauf via Global Blue VAT Refund.</p>
-                <div class="tax-badge" data-i18n="taxfree-nav-badge">Tax-Free Service</div>
             </div>
-        </div>
 
         <div class="container footer-bottom">
             <p data-i18n="footer-rights">© 2026 Juwelier Laner. Alle Rechte vorbehalten.</p>
@@ -268,69 +264,6 @@
             </ul>
         </div>
     </footer>
-
-    <!-- Booking Modal -->
-    <div class="modal" id="booking-modal">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close modal">&times;</button>
-            
-            <form id="booking-form">
-                <h3 data-i18n="modal-title">Beratungstermin vereinbaren</h3>
-                <p data-i18n="modal-subtitle">Wählen Sie Ihren Wunschtermin. Wir nehmen uns gerne Zeit für Sie.</p>
-                
-                <div class="form-group">
-                    <label for="booking-name" data-i18n="label-name">Name</label>
-                    <input type="text" id="booking-name" class="form-control" required data-i18n-placeholder="label-name">
-                </div>
-
-                <div class="form-group">
-                    <label for="booking-email" data-i18n="label-email">E-Mail-Adresse</label>
-                    <input type="email" id="booking-email" class="form-control" required data-i18n-placeholder="label-email">
-                </div>
-
-                <div class="form-group">
-                    <label for="booking-phone" data-i18n="label-phone">Telefonnummer</label>
-                    <input type="tel" id="booking-phone" class="form-control" required data-i18n-placeholder="label-phone">
-                </div>
-
-                <div class="form-group">
-                    <label for="booking-service" data-i18n="label-service">Interesse / Service</label>
-                    <select id="booking-service" class="form-control">
-                        <option value="wedding" data-i18n="opt-wedding">Trauring- & Eheberatung</option>
-                        <option value="jewelry" data-i18n="opt-jewelry">Exklusiver Schmuck</option>
-                        <option value="watch" data-i18n="opt-watch">Luxusuhren Beratung</option>
-                        <option value="repair" data-i18n="opt-repair">Werkstatt & Reparatur</option>
-                    </select>
-                </div>
-
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                    <div class="form-group">
-                        <label for="booking-date" data-i18n="label-date">Wunschdatum</label>
-                        <input type="date" id="booking-date" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="booking-time" data-i18n="label-time">Wunschuhrzeit</label>
-                        <input type="time" id="booking-time" class="form-control" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="booking-msg" data-i18n="label-msg">Ihre Nachricht (optional)</label>
-                    <textarea id="booking-msg" class="form-control" rows="3" data-i18n-placeholder="label-msg"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary form-submit-btn" data-i18n="btn-submit">Terminanfrage Senden</button>
-            </form>
-
-            <!-- Success Message -->
-            <div class="success-message" id="success-msg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <h4 data-i18n="success-title">Vielen Dank!</h4>
-                <p data-i18n="success-text">Ihre Terminanfrage ist bei uns eingegangen. Wir bestätigen Ihnen den Termin in Kürze per E-Mail.</p>
-                <button onclick="closeBookingModal()" class="btn btn-secondary" data-i18n="success-close">Fenster schließen</button>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
