@@ -447,6 +447,12 @@ header.scrolled {
     .split-section {
         grid-template-columns: 1fr;
     }
+    .split-content {
+        order: 1;
+    }
+    .split-image {
+        order: 2;
+    }
 }
 
 .split-image {
