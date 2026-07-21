@@ -23,13 +23,13 @@
         .gift-card {
             background-color: var(--bg-card);
             border: 1px solid rgba(255, 255, 255, 0.03);
-            padding: 2.5rem 2rem;
+            padding: 2rem 1.5rem;
             text-align: center;
             cursor: pointer;
             transition: var(--transition-smooth);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             height: 100%;
         }
         .gift-card:hover {
@@ -46,10 +46,11 @@
             font-size: 0.85rem;
             color: var(--text-muted);
             line-height: 1.6;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
             flex-grow: 1;
         }
         .gift-card span {
+            display: none;
             font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -275,6 +276,22 @@
                     </div>
                 </div>
 
+                <!-- Product 6 -->
+                <div class="product-card" data-category="tradition">
+                    <div class="product-img">
+                        <img src="images/filigree_edelweiss.png" alt="Filigraner Edelweiß Schmuckanhänger" loading="lazy" width="600" height="400">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category" data-i18n="filter-tradition">Tradition & Geschenke</span>
+                        <h3 class="product-title" data-i18n="prod-edelweiss-title">Filigranes Edelweiß</h3>
+                        <p class="product-desc" data-i18n="prod-edelweiss-desc">Traditioneller filigraner Schmuckanhänger in Form eines Edelweißes aus feinstem Silber.</p>
+                        <div class="product-meta">
+                            <span class="product-price" data-i18n="prod-price-request">Auf Anfrage</span>
+                            <a href="kontakt.html" class="product-cta" data-i18n="btn-inquire">Details anfragen</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -297,14 +314,13 @@
                     <span class="title">Juwelier Laner</span>
                     <span class="subtitle" data-i18n="logo-subtitle">Bruneck · Dolomiten</span>
                 </a>
-                <p data-i18n="footer-desc" style="margin-top: 1rem;">Ihr traditionsreiches Familienunternehmen für edlen Schmuck, feines italienisches Gold und zertifizierten Uhrenservice in Bruneck.</p>
+                <p data-i18n="footer-desc" style="margin-top: 1rem;">Ihr traditionsreiches Familienunternehmen für edlen Schmuck und feines italienisches Gold in Bruneck.</p>
             </div>
             
             <div class="footer-col">
-                <h5 data-i18n="nav-schmuck">Schmuck & Kollektionen</h5>
+                <h5 data-i18n="nav-schmuck">Schmuck</h5>
                 <ul>
-                    <li><a href="schmuck.html" data-i18n="opt-wedding">Trauringe</a></li>
-                    <li><a href="schmuck.html" data-i18n="opt-jewelry">Feingold</a></li>
+                    <li><a href="schmuck.html" data-i18n="opt-jewelry">Gold und Silber</a></li>
                     <li><a href="schmuck.html">Diamantschmuck</a></li>
                 </ul>
             </div>
@@ -314,8 +330,7 @@
                 <ul>
                     <li><a href="uhren.html" data-i18n="filter-classic">Klassisch</a></li>
                     <li><a href="uhren.html" data-i18n="filter-sport">Sportlich</a></li>
-                    <li><a href="uhren.html">Chronographen</a></li>
-                </ul>
+                    </ul>
             </div>
 
             </div>

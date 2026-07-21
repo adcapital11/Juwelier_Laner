@@ -4,7 +4,9 @@ const translations = {
         // Navigation
         "nav-home": "Home",
         "nav-history": "Geschichte",
-        "nav-schmuck": "Schmuck & Kollektionen",
+        "nav-schmuck": "Schmuck",
+        "opt-wedding": "Trauringe",
+        "opt-jewelry": "Gold und Silber",
         "nav-uhren": "Uhren",
         "nav-service": "Service & Werkstatt",
         "nav-kontakt": "Kontakt",
@@ -26,7 +28,7 @@ const translations = {
         
         // Homepage Section 1: Hero
         "hero-title": "Werte, die Generationen verbinden.",
-        "hero-subtitle": "Seit Generationen Ihr traditionsreicher Juwelier in Bruneck – Ihr Vertrauenspartner für erlesene Schmuckstücke, feines italienisches Gold und zertifizierten Uhrenservice im Pustertal.",
+        "hero-subtitle": "Seit Generationen Ihr traditionsreicher Juwelier in Bruneck – Ihr Vertrauenspartner für erlesene Schmuckstücke und feines italienisches Gold im Pustertal.",
         "hero-cta-primary": "Kontakt aufnehmen",
         "hero-cta-secondary": "Kollektionen entdecken",
         "bottom-cta-title": "Besuchen Sie uns in Bruneck",
@@ -34,11 +36,11 @@ const translations = {
         
         // Homepage Section 2: Pillars
         "pillar-1-title": "Meisterhandwerk",
-        "pillar-1-text": "Hauseigene Meisterwerkstatt für exklusive Schmuckanfertigungen und präzisen Uhrenservice.",
+        "pillar-1-text": "Hauseigene Meisterwerkstatt für Schmuckreparaturen, Anpassungen und fachgerechte Aufarbeitung.",
         "pillar-2-title": "Exklusive Auswahl",
         "pillar-2-text": "Handverlesene Schmuckstücke, feinstes italienisches Gold und renommierte Uhrenmarken.",
         "pillar-3-title": "Herzliche Beratung",
-        "pillar-3-text": "Diskrete Beratung in entspannter Atmosphäre – wir nehmen uns Zeit für Ihre Lebensbegleiter.",
+        "pillar-3-text": "Diskrete Beratung in entspannter Atmosphäre – wir nehmen uns Zeit für Sie und Ihre Wünsche.",
         
         // Homepage Section 3: Wedding Focus
                 "verlobung-badge": "Ratgeber",
@@ -47,9 +49,9 @@ const translations = {
         "verlobung-teaser-btn": "Zum Verlobungs-Kompass",
         "verlobung-link": "Der Brunecker Verlobungs-Kompass (Ratgeber) →",
         "guide-title": "Der Verlobungs-Kompass",
-        "guide-intro": "Planen Sie den Moment aller Momente völlig sorgenfrei. Mit unserem Leitfaden führen wir Sie stufenweise zum perfekten Ring und sichern den Antrag mit exklusiven Garantien ab.",
+        "guide-intro": "Planen Sie den Moment aller Momente völlig sorgenfrei. Mit unserem Leitfaden führen wir Sie stufenweise zum perfekten Ring.",
         "step-1-title": "Die Wahl des Edelmetalls",
-        "step-1-text": "Für einen Verlobungsring, der ein Leben lang glänzt, empfehlen wir Platin 950 oder 18-karätiges Gold. Platin ist extrem abriebfest und behält seine strahlend weiße Farbe für immer, ohne zu verblassen. Weißgold bietet eine ähnlich kühle Eleganz, während Gelbgold oder warmes Roségold klassischen und femininen Stil verkörpern.",
+        "step-1-text": "Für einen Verlobungsring, der ein Leben lang glänzt, empfehlen wir 18-karätiges Gold. Weißgold bietet eine kühle Eleganz, während Gelbgold oder warmes Roségold klassischen und femininen Stil verkörpern.",
         "step-2-title": "Die Ringgröße heimlich messen",
         "step-2-text": "Der wohl spannendste Schritt. So ermitteln Sie die Größe, ohne Verdacht zu schöpfen:",
         "size-trick-1": "<strong>Der Ring-Trick:</strong> Entwenden Sie heimlich einen gut passenden Ring Ihrer Partnerin (am besten einen, der am Ringfinger getragen wird) und bringen Sie diesen zu uns ins Geschäft. Wir messen ihn exakt aus.",
@@ -57,8 +59,7 @@ const translations = {
         "size-trick-3": "<strong>Freunde fragen:</strong> Manchmal wissen die beste Freundin oder die Mutter bereits die exakte Größe.",
         "step-3-title": "Die 4Cs des Diamanten verstehen",
         "step-3-text": "Ein Diamant funkelt durch die Kombination aus vier Faktoren: <strong>Carat</strong> (Gewicht/Größe), <strong>Cut</strong> (Schliffqualität – entscheidend für das Feuer), <strong>Clarity</strong> (Reinheit) und <strong>Color</strong> (Farblosigkeit). Wir führen ausschließlich zertifizierte Steine und helfen Ihnen, die perfekte Balance für Ihr Budget zu finden.",
-        "step-4-title": "Das risikofreie Laner-Versprechen",
-        "step-4-text": "Sorgenfreier Antrag garantiert: Sollte die Ringgröße trotz aller Heimlichkeit nicht passen, ändern wir die Ringgröße in unserer Brunecker Meisterwerkstatt nach dem Antrag **völlig kostenlos**. So bleibt der Moment der Frage perfekt und frei von Sorgen.",
+
         "sizer-title": "Kostenloses Ringmaßband anfordern",
         "sizer-desc": "Wir senden Ihnen auf Wunsch ein diskretes Ringmaßband (Multisizer) per Post kostenlos nach Hause. Damit können Sie die Ringgröße Ihrer Partnerin heimlich oder gemeinsam exakt ablesen.",
         "sizer-btn": "Ringmaßband anfordern",
@@ -70,17 +71,17 @@ const translations = {
         "wedding-link": "Mehr über unsere Trauring-Beratung erfahren →",
         
         // Homepage Section 4: International Showcase
-        "intl-title": "Italienische Eleganz trifft alpines Handwerk",
-        "intl-text": "Entdecken Sie europäische Raffinesse. Wir bieten Ihnen eine exklusive Auswahl feinster italienischer Goldschmiedekunst und erlesener Zeitmesser renommierter Marken.",
-        "feat-1-title": "Individuelle Anfertigung",
-        "feat-1-text": "Einzigartiger, handgefertigter Schmuck aus unserer Brunecker Werkstatt.",
-        "feat-2-title": "Italienische & Alpine Echtheit",
-        "feat-2-text": "Zertifiziertes 18-karätiges Gold und Diamanten mit Herkunftsnachweis.",
+        "intl-title": "Italienischer Goldschmuck und ausgewählte Uhren",
+        "intl-text": "Wir bieten Ihnen eine exklusive Auswahl feinster italienischer Goldschmiedekunst und erlesener Zeitmesser renommierter Marken.",
+        "feat-1-title": "Schmuckpflege & Reparatur",
+        "feat-1-text": "Fachgerechte Reparatur, Größenanpassung und Aufarbeitung Ihrer edlen Schmuckstücke in Bruneck.",
+        "feat-2-title": "Handverlesene Stücke",
+        "feat-2-text": "Wir wählen jedes Schmuckstück unserer Kollektionen persönlich aus – mit feinem Gespür für Qualität und zeitlosen Stil.",
         "feat-3-title": "Tradition seit 1886",
         "feat-3-text": "Seit über 140 Jahren ein familiengeführtes Fachgeschäft im Herzen von Bruneck.",
         
         // Homepage Section 5: Alpine Italian
-        "heritage-title": "Alpine Seele und zeitlose Werte in Bruneck.",
+        "heritage-title": "Beständigkeit und Vertrauen im Herzen von Bruneck.",
         "heritage-text": "Bereits 1886 eröffnete Florian Laner das Goldgeschäft in der Stadtgasse von Bruneck. Über Friederike und den Goldschmied Wilhelm sowie die Söhne Norbert und Bernhard führen heute Edith und Veronika die traditionsreiche Geschichte in der vierten Generation fort.",
         "heritage-link": "Mehr über unsere Geschichte erfahren →",
         
@@ -108,17 +109,16 @@ const translations = {
         "filter-sport": "Sportlich",
         "filter-gold-watches": "Edelmetall",
         
-        "service-title": "Meisterwerkstatt & Service",
-        "service-text": "Handwerk aus Leidenschaft. In unserer hauseigenen Werkstatt pflegen und reparieren wir Ihre wertvollen Schmuckstücke und Uhren mit äußerster Präzision.",
+        "service-title": "Goldschmiede-Atelier",
+        "service-text": "Handwerk aus Leidenschaft. In unserer hauseigenen Werkstatt pflegen und reparieren wir Ihre wertvollen Schmuckstücke mit äußerster Präzision.",
         "repair-jewelry-title": "Goldschmiede-Atelier",
-        "repair-jewelry-text": "Individuelle Neuanfertigungen, präzise Ringgrößen-Anpassungen, Aufarbeitungen und Gravuren. Beim Kauf von Trauringen ist die erste Größenanpassung sowie die Erstgravur für Sie kostenlos – inklusive lebenslanger Auffrischung und Reinigung Ihres bei uns erworbenen Schmucks.",
-        "repair-watch-title": "Zertifizierter Uhrenservice",
-        "repair-watch-text": "Komplette Revisionen mechanischer Uhrwerke mit 24 Monaten Garantie, Batteriewechsel, Wasserdichtigkeitsprüfungen und Werterhalt historischer Zeitmesser. Vertrauen Sie auf zertifizierte Meisterqualität.",
+        "repair-jewelry-text": "Präzise Ringgrößen-Anpassungen, fachgerechte Aufarbeitungen, Reparaturen sowie schonende Reinigung und Politur.",
+
         
         "kontakt-page-title": "Kontakt",
         "logo-subtitle": "Bruneck · Dolomiten",
         "kontakt-page-text": "Haben Sie Fragen oder Wünsche? Wir freuen uns darauf, Sie persönlich in unserem Geschäft in Bruneck zu begrüßen oder direkt von Ihnen zu hören.",
-        "hosts-title": "Ihre Gastgeberinnen",
+        "hosts-title": "Die Inhaberinnen",
         "hosts-text": "Edith und Veronika Feil leiten das Traditionsgeschäft in der vierten Generation. Mit geschultem Auge für Ästhetik und tiefer Liebe zum Goldschmiedehandwerk stehen wir Ihnen persönlich beratend zur Seite, um Ihre Wünsche Wirklichkeit werden zu lassen.",
         "host-1-role": "Geschäftsleitung & Beratung",
         "host-2-role": "Goldschmiedemeisterin",
@@ -140,7 +140,7 @@ const translations = {
         
         // Common CTAs & Elements
         "taxfree-nav-badge": "Tax-Free Shopping",
-        "footer-desc": "Ihr traditionsreiches Familienunternehmen für edlen Schmuck, feines italienisches Gold und zertifizierten Uhrenservice in Bruneck.",
+        "footer-desc": "Ihr traditionsreiches Familienunternehmen für edlen Schmuck und feines italienisches Gold in Bruneck.",
         "footer-rights": "© 2026 Juwelier Laner. Alle Rechte vorbehalten.",
         "footer-imprint": "Impressum",
         "footer-privacy": "Datenschutz",
@@ -167,6 +167,14 @@ const translations = {
         "prod-taufe-desc": "Filigranes 18-karätiges Gelbgold-Collier mit einem fein ausgearbeiteten Lebensbaum-Anhänger. Ein zeitloses Symbol für Wachstum und Familie – ideal als Geschenk für Lebensmeilensteine.",
         "prod-kinder-title": "Stern-Ohrstecker „Stella“",
         "prod-kinder-desc": "Kleine, zarte Stern-Ohrstecker aus allergenfreiem 18k Gelbgold. Perfekt abgerundet und sicher für empfindliche Kinderohren.",
+        "prod-edelweiss-title": "Filigranes Edelweiß",
+        "prod-edelweiss-desc": "Traditioneller filigraner Schmuckanhänger in Form eines Edelweißes aus feinstem Silber.",
+        "prod-6-title": "Skyhawk Chronograph",
+        "prod-6-desc": "Präziser, funkgesteuerter Fliegerchronograph aus Edelstahl.",
+        "prod-7-title": "Diamond Bicolor",
+        "prod-7-desc": "Elegante Damenuhr mit Diamantlünette und zweifarbigem Edelstahl-Gliederband.",
+        "prod-8-title": "Skeleton Automatic",
+        "prod-8-desc": "Automatisches mechanisches Uhrwerk in filigranem Skelett-Design mit massivem Goldgehäuse.",
         "taxfree-p1": "Internationale Kunden mit Wohnsitz außerhalb der Europäischen Union (z. B. arabische Länder, Schweiz, USA) genießen bei Juwelier Laner den vollen Steuerrückerstattungs-Service.",
         "taxfree-p2": "Als offizieller Partner von Global Blue ermöglichen wir eine reibungslose und direkte Abwicklung der Mehrwertsteuerrückerstattung (VAT Refund) direkt bei uns im Geschäft in Bruneck.",
         "taxfree-li1": "Vorlage des Reisepasses genügt",
@@ -223,7 +231,9 @@ const translations = {
         // Navigation
         "nav-home": "Home",
         "nav-history": "Storia",
-        "nav-schmuck": "Gioielli & Collezioni",
+        "nav-schmuck": "Gioielli",
+        "opt-wedding": "Fedi Nuziali",
+        "opt-jewelry": "Oro e Argento",
         "nav-uhren": "Orologi",
         "nav-service": "Servizio & Laboratorio",
         "nav-kontakt": "Contatto",
@@ -245,7 +255,7 @@ const translations = {
         
         // Homepage Section 1: Hero
         "hero-title": "Valori che uniscono le generazioni.",
-        "hero-subtitle": "Da generazioni la vostra gioielleria di fiducia a Brunico – il vostro partner per creazioni preziose, oro italiano a 18 carati e assistenza orologiaia certificata in Val Pusteria.",
+        "hero-subtitle": "Da generazioni la vostra gioielleria di fiducia a Brunico – il vostro partner per creazioni preziose e oro italiano a 18 carati in Val Pusteria.",
         "hero-cta-primary": "Contattaci",
         "hero-cta-secondary": "Scopri le collezioni",
         "bottom-cta-title": "Venite a trovarci a Brunico",
@@ -253,7 +263,7 @@ const translations = {
         
         // Homepage Section 2: Pillars
         "pillar-1-title": "Maestria Artigiana",
-        "pillar-1-text": "Laboratorio orafo interno per creazioni esclusive su misura e assistenza orologiera di alta precisione.",
+        "pillar-1-text": "Laboratorio orafo interno per riparazioni, regolazioni e restauro professionale di gioielli.",
         "pillar-2-title": "Selezione Esclusiva",
         "pillar-2-text": "Gioielli selezionati con cura, il miglior oro italiano a 18 carati e prestigiosi marchi di orologi.",
         "pillar-3-title": "Consulenza Personale",
@@ -266,9 +276,9 @@ const translations = {
         "verlobung-teaser-btn": "Vai alla Bussola",
         "verlobung-link": "La Bussola del Fidanzamento di Brunico (Guida) →",
         "guide-title": "La Bussola del Fidanzamento",
-        "guide-intro": "Pianificate il momento più importante in assoluto in totale serenità. Con la nostra guida vi accompagneremo passo dopo passo verso la scelta dell'anello perfetto con garanzie esclusive.",
+        "guide-intro": "Pianificate il momento più importante in assoluto in totale serenità. Con la nostra guida vi accompagneremo passo dopo passo verso la scelta dell'anello perfetto.",
         "step-1-title": "La scelta del metallo prezioso",
-        "step-1-text": "Per un anello di fidanzamento che risplenda per sempre, consigliamo il platino 950 o l'oro a 18 carati. Il platino è estremamente resistente e mantiene intatto il suo colore bianco puro per sempre. L'oro bianco offre una simile eleganza fredda, mentre l'oro giallo o rosa esprimono uno stile classico e femminile.",
+        "step-1-text": "Per un anello di fidanzamento che risplenda per sempre, consigliamo l'oro a 18 carati. L'oro bianco offre un'eleganza fredda, mentre l'oro giallo o rosa esprimono uno stile classico e femminile.",
         "step-2-title": "Misurare la taglia segretamente",
         "step-2-text": "Il passo più emozionante. Ecco come scoprire la misura senza destare sospetti:",
         "size-trick-1": "<strong>Il trucco dell'anello:</strong> Prendi segretamente un anello della tua partner (preferibilmente uno che indossa all'anulare) e portalo in negozio. Lo misureremo con precisione.",
@@ -276,8 +286,7 @@ const translations = {
         "size-trick-3": "<strong>Chiedere ad amici:</strong> Spesso la migliore amica o la mamma conoscono già la misura esatta.",
         "step-3-title": "Comprendere le 4C del diamante",
         "step-3-text": "Un diamante brilla grazie a quattro fattori: <strong>Carat</strong> (peso/grandezza), <strong>Cut</strong> (taglio – fondamentale per il fuoco), <strong>Clarity</strong> (purezza) e <strong>Color</strong> (colore/assenza di colore). Offriamo esclusivamente pietre certificate per trovare l'equilibrio ideale per il tuo budget.",
-        "step-4-title": "La promessa senza rischi di Laner",
-        "step-4-text": "Proposta senza pensieri: se la misura dell'anello dovesse risultare errata nonostante i trucchi, modificheremo la misura nel nostro laboratorio orafo a Brunico **gratuitamente** dopo la proposta.",
+
         "sizer-title": "Richiedi il misuratore anelli gratuito",
         "sizer-desc": "Su richiesta vi invieremo a casa per posta un misuratore anelli discreto (Multisizer). In questo modo potrete misurare con precisione la taglia segretamente o insieme.",
         "sizer-btn": "Richiedi misuratore",
@@ -289,17 +298,17 @@ const translations = {
         "wedding-link": "Scopri di più sulla consulenza fedi nuziali →",
         
         // Homepage Section 4: International Showcase
-        "intl-title": "L'eleganza italiana incontra l'artigianato alpino",
-        "intl-text": "Scopri la vera raffinatezza europea. Offriamo una selezione curata della migliore oreficeria italiana e orologi distintivi di rinomati produttori.",
-        "feat-1-title": "Creazioni su misura",
-        "feat-1-text": "Gioielli unici fatti a mano realizzati nel nostro laboratorio di Brunico.",
-        "feat-2-title": "Autenticità Alpina e Italiana",
-        "feat-2-text": "Oro 18 carati certificato e diamanti con garanzia di origine controllata.",
+        "intl-title": "Gioielli in oro italiano e orologi selezionati",
+        "intl-text": "Offriamo una selezione curata della migliore oreficeria italiana e orologi distintivi di rinomati produttori.",
+        "feat-1-title": "Cura & Ripristino",
+        "feat-1-text": "Riparazioni professionali, regolazione di misure e restauro di gioielli a Brunico.",
+        "feat-2-title": "Pezzi selezionati",
+        "feat-2-text": "Selezioniamo personalmente ogni gioiello delle nostre collezioni – con un occhio attento alla qualità e allo stile senza tempo.",
         "feat-3-title": "Tradizione dal 1886",
         "feat-3-text": "Da oltre 140 anni una gioielleria a conduzione familiare nel cuore di Brunico.",
         
         // Homepage Section 5: Alpine Italian
-        "heritage-title": "Anima alpina e valori senza tempo a Brunico.",
+        "heritage-title": "Solidità e fiducia nel cuore di Brunico.",
         "heritage-text": "Nel 1886 Florian Laner aprì l'oreficeria nella Via Centrale (Stadtgasse) di Brunico. Attraverso Friederike e l'orefice Wilhelm, e successivamente i figli Norbert e Bernhard, oggi Edith e Veronika continuano con passione la tradizione di famiglia.",
         "heritage-link": "Scopri la nostra storia →",
         
@@ -327,17 +336,16 @@ const translations = {
         "filter-sport": "Sportivi",
         "filter-gold-watches": "Metalli Preziosi",
         
-        "service-title": "Laboratorio & Assistenza",
-        "service-text": "Passione per l'artigianato. Nel nostro laboratorio interno curiamo e ripariamo i vostri preziosi orologi e gioielli con assoluta accuratezza.",
+        "service-title": "Laboratorio Orafo",
+        "service-text": "Passione per l'artigianato. Nel nostro laboratorio interno curiamo e ripariamo i vostri preziosi gioielli con assoluta accuratezza.",
         "repair-jewelry-title": "Atelier Orafo",
-        "repair-jewelry-text": "Creazioni personalizzate, modifiche di misure di anelli, restauri e incisioni. Per l'acquisto delle fedi nuziali, la prima regolazione e l'incisione sono gratuite – compresa la pulizia e lucidatura a vita per i vostri gioielli acquistati da noi.",
-        "repair-watch-title": "Assistenza Orologiera Certificata",
-        "repair-watch-text": "Revisioni complete di movimenti meccanici con 24 mesi di garanzia, sostituzione batterie, test di impermeabilità e restauro. Affidatevi alla nostra qualità magistrale certificata.",
+        "repair-jewelry-text": "Modifiche di misure di anelli, restauri professionali, riparazioni, nonché pulizia delicata e lucidatura.",
+
         
         "kontakt-page-title": "Contatti",
         "logo-subtitle": "Brunico · Dolomiti",
         "kontakt-page-text": "Hai domande o desideri? Saremo lieti di accoglierti di persona nella nostra sede storica a Brunico o di ricevere un tuo messaggio.",
-        "hosts-title": "Le vostre ospitanti",
+        "hosts-title": "Le titolari",
         "hosts-text": "Edith e Veronika Feil guidano l'attività storica nella quarta generazione. Con un occhio attento all'estetica e un profondo amore per l'oreficeria artigianale, vi affianchiamo personalmente per realizzare i vostri desideri.",
         "host-1-role": "Direzione & Consulenza",
         "host-2-role": "Maestra Orafa",
@@ -359,7 +367,7 @@ const translations = {
         
         // Common CTAs & Elements
         "taxfree-nav-badge": "Servizio Tax-Free",
-        "footer-desc": "La vostra gioielleria di famiglia di fiducia per creazioni preziose, oro italiano a 18 carati e assistenza orologiaia certificata a Brunico.",
+        "footer-desc": "La vostra gioielleria di famiglia di fiducia per creazioni preziose e oro italiano a 18 carati a Brunico.",
         "footer-rights": "© 2026 Juwelier Laner. Tutti i diritti riservati.",
         "footer-imprint": "Note legali",
         "footer-privacy": "Privacy",
@@ -386,6 +394,14 @@ const translations = {
         "prod-taufe-desc": "Filigrana collana in oro giallo 18 carati con un ciondolo finemente lavorato che raffigura l'albero della vita. Un simbolo eterno di crescita e famiglia, ideale come regalo per le tappe importanti della vita.",
         "prod-kinder-title": "Orecchini a lobo „Stella“",
         "prod-kinder-desc": "Piccoli e delicati orecchini a lobo a forma di stella in oro giallo 18k anallergico. Perfettamente arrotondati e sicuri per le orecchie sensibili dei bambini.",
+        "prod-edelweiss-title": "Filigrana Stella Alpina",
+        "prod-edelweiss-desc": "Pendente tradizionale in filigrana d'argento a forma di stella alpina.",
+        "prod-6-title": "Cronografo Skyhawk",
+        "prod-6-desc": "Cronografo da pilota radiocontrollato ad alta precisione in acciaio inossidabile.",
+        "prod-7-title": "Diamond Bicolor",
+        "prod-7-desc": "Elegante orologio da donna con lunetta diamantata e cinturino a maglie bicolore.",
+        "prod-8-title": "Skeleton Automatic",
+        "prod-8-desc": "Movimento meccanico automatico con design scheletrato e cassa in oro massiccio.",
         "taxfree-p1": "I clienti internazionali residenti al di fuori dell'Unione Europea (es. Paesi Arabi, Svizzera, USA) beneficiano del servizio completo di rimborso dell'imposta.",
         "taxfree-p2": "Come partner ufficiale di Global Blue, offriamo un rimborso dell'IVA (VAT Refund) semplice e rapido direttamente presso la nostra gioielleria a Brunico.",
         "taxfree-li1": "È sufficiente esibire il passaporto",
@@ -442,7 +458,9 @@ const translations = {
         // Navigation
         "nav-home": "Home",
         "nav-history": "History",
-        "nav-schmuck": "Jewelry & Collections",
+        "nav-schmuck": "Jewelry",
+        "opt-wedding": "Wedding Rings",
+        "opt-jewelry": "Gold & Silver",
         "nav-uhren": "Watches",
         "nav-service": "Service & Workshop",
         "nav-kontakt": "Contact",
@@ -464,7 +482,7 @@ const translations = {
         
         // Homepage Section 1: Hero
         "hero-title": "Values connecting generations.",
-        "hero-subtitle": "For generations, your traditional family jeweler in Bruneck – your trusted partner for exquisite jewelry, fine Italian gold, and master watch repair services in the Puster Valley.",
+        "hero-subtitle": "For generations, your traditional family jeweler in Bruneck – your trusted partner for exquisite jewelry and fine Italian gold in the Puster Valley.",
         "hero-cta-primary": "Contact us",
         "hero-cta-secondary": "Discover collections",
         "bottom-cta-title": "Visit Us in Bruneck",
@@ -472,11 +490,11 @@ const translations = {
         
         // Homepage Section 2: Pillars
         "pillar-1-title": "Master Craftsmanship",
-        "pillar-1-text": "In-house master workshop for bespoke jewelry creations and high-precision watch servicing.",
+        "pillar-1-text": "In-house master workshop for jewelry repairs, resizing, and professional restoration.",
         "pillar-2-title": "Exclusive Selection",
         "pillar-2-text": "Handpicked jewelry, finest 18k Italian yellow gold, and renowned premium watchmakers.",
         "pillar-3-title": "Personal Consultation",
-        "pillar-3-text": "Discrete guidance in a warm atmosphere – we take all the time your life companions deserve.",
+        "pillar-3-text": "Discrete guidance in a warm atmosphere – we take all the time you and your wishes deserve.",
         
         // Homepage Section 3: Wedding Focus
                 "verlobung-badge": "Guide",
@@ -485,9 +503,9 @@ const translations = {
         "verlobung-teaser-btn": "Go to the Compass Guide",
         "verlobung-link": "The Bruneck Engagement Compass (Guide) →",
         "guide-title": "The Engagement Compass",
-        "guide-intro": "Plan the moment of moments completely worry-free. Our step-by-step guide leads you to the perfect ring, backed by our exclusive workshop resizing guarantees.",
+        "guide-intro": "Plan the moment of moments completely worry-free. Our step-by-step guide leads you to the perfect ring.",
         "step-1-title": "Choosing the Precious Metal",
-        "step-1-text": "For an engagement ring that shines for a lifetime, we recommend platinum 950 or 18-karat gold. Platinum is exceptionally durable and retains its bright white color forever. White gold offers a similar cool elegance, while yellow or warm rose gold embodies classic, feminine style.",
+        "step-1-text": "For an engagement ring that shines for a lifetime, we recommend 18-karat gold. White gold offers a cool elegance, while yellow or warm rose gold embodies classic, feminine style.",
         "step-2-title": "Secretly Measuring the Ring Size",
         "step-2-text": "The most exciting step. How to find the correct size without raising suspicion:",
         "size-trick-1": "<strong>The Ring Trick:</strong> Secretly borrow a ring your partner wears on the ring finger and bring it to our store. We will measure it precisely.",
@@ -495,8 +513,7 @@ const translations = {
         "size-trick-3": "<strong>Ask Close Relatives:</strong> Often her mother or best friend already knows her exact ring size.",
         "step-3-title": "Understanding the 4Cs of Diamonds",
         "step-3-text": "A diamond's brilliance depends on four factors: <strong>Carat</strong> (weight/size), <strong>Cut</strong> (cut quality – vital for fire), <strong>Clarity</strong> (purity), and <strong>Color</strong> (colorlessness). We only carry certified stones and help you balance these for your budget.",
-        "step-4-title": "The Risk-Free Laner Guarantee",
-        "step-4-text": "Worry-free proposal guaranteed: If the ring size doesn't fit despite your best efforts, we will resize the ring in our Bruneck master workshop **completely free of charge** after the proposal.",
+
         "sizer-title": "Request a Free Ring Sizer",
         "sizer-desc": "We will gladly mail you a discreet ring sizer (Multisizer) directly to your home for free. You can use it to determine her ring size secretly or together.",
         "sizer-btn": "Request Ring Sizer",
@@ -508,17 +525,17 @@ const translations = {
         "wedding-link": "Learn more about our wedding consultation →",
         
         // Homepage Section 4: International Showcase
-        "intl-title": "Italian Elegance meets Alpine Craftsmanship",
-        "intl-text": "Discover true European refinement. We offer a curated selection of finest Italian gold jewelry and distinctive timepieces from renowned makers.",
-        "feat-1-title": "Bespoke Creations",
-        "feat-1-text": "Unique, handcrafted jewelry made to your vision in our Bruneck workshop.",
-        "feat-2-title": "Italian & Alpine Authenticity",
-        "feat-2-text": "Certified 18-karat gold and diamonds with verified source certification.",
+        "intl-title": "Italian Gold Jewelry & Selected Watches",
+        "intl-text": "We offer a curated selection of finest Italian gold jewelry and distinctive timepieces from renowned makers.",
+        "feat-1-title": "Restoration & Care",
+        "feat-1-text": "Expert repair, ring resizing, and professional refinishing of your fine jewelry in Bruneck.",
+        "feat-2-title": "Handpicked Pieces",
+        "feat-2-text": "We select every piece of our collections personally for you – with a keen eye for quality and timeless style.",
         "feat-3-title": "Tradition since 1886",
         "feat-3-text": "For over 140 years, a family-run boutique in the heart of Bruneck.",
         
         // Homepage Section 5: Alpine Italian
-        "heritage-title": "Alpine Soul and Timeless Values in Bruneck.",
+        "heritage-title": "Permanence and trust in the heart of Bruneck.",
         "heritage-text": "As early as 1886, Florian Laner opened the gold shop in the historic Stadtgasse of Bruneck. Passed down through Friederike and the goldsmith Wilhelm, and later the sons Norbert and Bernhard, today Edith and Veronika continue this proud family tradition.",
         "heritage-link": "Discover our heritage →",
         
@@ -546,17 +563,16 @@ const translations = {
         "filter-sport": "Sporty",
         "filter-gold-watches": "Precious Metals",
         
-        "service-title": "Workshop & Service",
-        "service-text": "Bespoke jewelry repairs, clockwork revisions, and restoration services executed by professional hands in our in-house studio.",
+        "service-title": "Goldsmith Atelier",
+        "service-text": "Bespoke jewelry repairs and restoration services executed by professional hands in our in-house studio.",
         "repair-jewelry-title": "Goldsmith Atelier",
-        "repair-jewelry-text": "Bespoke creations, precise ring resizing, refinishing, and engravings. With any wedding ring purchase, the first resizing and custom engraving are complimentary – including lifelong cleaning and polishing for all jewelry purchased from us.",
-        "repair-watch-title": "Certified Watch Service",
-        "repair-watch-text": "Complete servicing of mechanical movements, battery replacement, water resistance tests, and expert restorations.",
+        "repair-jewelry-text": "Precise ring resizing, professional refinishing, repairs, as well as gentle cleaning and polishing.",
+
         
         "kontakt-page-title": "Contact",
         "logo-subtitle": "Bruneck · Dolomites",
         "kontakt-page-text": "Do you have any questions or requests? We look forward to welcoming you in person at our flagship store in Bruneck or hearing from you directly.",
-        "hosts-title": "Your Hosts",
+        "hosts-title": "The Proprietors",
         "hosts-text": "Edith and Veronika Feil lead the traditional boutique in the fourth generation. With a keen eye for aesthetics and a deep love for goldsmithing craftsmanship, we are personally by your side to make your wishes come true.",
         "host-1-role": "Management & Consultation",
         "host-2-role": "Master Goldsmith",
@@ -605,6 +621,14 @@ const translations = {
         "prod-taufe-desc": "Delicate 18-karat yellow gold necklace with a finely crafted Tree of Life pendant. A timeless symbol of growth and family - ideal as a gift for life milestones.",
         "prod-kinder-title": "Star Studs \"Stella\"",
         "prod-kinder-desc": "Small, delicate star-shaped stud earrings in hypoallergenic 18k yellow gold. Perfectly rounded and safe for sensitive children's ears.",
+        "prod-edelweiss-title": "Filigree Edelweiss",
+        "prod-edelweiss-desc": "Traditional silver filigree pendant shaped like an edelweiss flower.",
+        "prod-6-title": "Skyhawk Chronograph",
+        "prod-6-desc": "High-precision radio-controlled pilot chronograph in robust stainless steel.",
+        "prod-7-title": "Diamond Bicolor",
+        "prod-7-desc": "Elegant ladies' watch with a diamond bezel and a two-tone steel bracelet.",
+        "prod-8-title": "Skeleton Automatic",
+        "prod-8-desc": "Automatic mechanical movement in a detailed skeleton design with a solid gold case.",
         "taxfree-p1": "International guests residing outside the European Union (e.g., Arab countries, Switzerland, USA) enjoy full tax refund service benefits at Juwelier Laner.",
         "taxfree-p2": "As an official Global Blue partner, we enable a seamless and direct VAT refund process directly at our shop in Bruneck.",
         "taxfree-li1": "Presentation of passport is sufficient",
